@@ -1,0 +1,33 @@
+(class (attrs ) org/mozilla/javascript/ScriptRuntime$IdEnumeration
+ (super java/lang/Object)
+ (source "ScriptRuntime.java")
+ (implements java/io/Serializable)
+
+ (field (attrs private static final ) serialVersionUID long 1); 0x1 )
+ (field (attrs ) currentId [object java/lang/Object] )
+ (field (attrs ) enumNumbers boolean )
+ (field (attrs ) enumType int )
+ (field (attrs ) ids [array [object java/lang/Object]] )
+ (field (attrs ) index int )
+ (field (attrs ) iterator [object org/mozilla/javascript/Scriptable] )
+ (field (attrs ) obj [object org/mozilla/javascript/Scriptable] )
+ (field (attrs ) used [object org/mozilla/javascript/ObjToIntMap] )
+
+(method (attrs private ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/ScriptRuntime$IdEnumeration])
+  (line 1966)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (return-void )
+ )
+
+(method (attrs ) <init>([object org/mozilla/javascript/ScriptRuntime$1] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ScriptRuntime$IdEnumeration])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/ScriptRuntime$1])
+  (line 1966)
+  (invoke-direct {v0} org/mozilla/javascript/ScriptRuntime$IdEnumeration/<init> )
+  (return-void )
+ )
+
+)

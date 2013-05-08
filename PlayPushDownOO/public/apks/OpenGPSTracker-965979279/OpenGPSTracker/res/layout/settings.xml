@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/opengpstracker_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/preference_logging">
+        <PreferenceCategory android:title="@string/preference_logging">
+            <ListPreference android:entries="@array/precision_choices" android:title="@string/precision_title" android:key="precision" android:summary="@string/precision_summary" android:defaultValue="2" android:entryValues="@array/precision_values" />
+            <EditTextPreference android:singleLine="true" android:title="@string/customprecisiontime_title" android:key="customprecisiontime" android:summary="@string/customprecisiontime_summary" android:defaultValue="50" android:inputType="number" />
+            <EditTextPreference android:singleLine="true" android:title="@string/customprecisiondistance_title" android:key="customprecisiondistance" android:summary="@string/customprecisiondistance_summary" android:defaultValue="30" android:inputType="number" />
+            <CheckBoxPreference android:title="@string/sanitycheck_title" android:key="speedsanitycheck" android:summary="@string/sanitycheck_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/gpsstatusmonitor_title" android:key="gpsstatusmonitor" android:summary="@string/gpsstatusmonitor_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_behavior">
+        <PreferenceCategory android:title="@string/preference_behavior">
+            <CheckBoxPreference android:title="@string/disableblanking_title" android:key="disableblanking" android:summary="@string/disableblanking_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/disabledimming_title" android:key="disabledimming" android:summary="@string/disabledimming_summary" android:dependency="disableblanking" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/startupatboot" android:key="startupatboot" android:summary="@string/startupatboot_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/logatstartup" android:key="logatstartup" android:summary="@string/logatstartup_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/logatdock" android:key="logatdock" android:summary="@string/logatdock_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/stopatundock" android:key="stopatundock" android:summary="@string/stopatundock_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_display">
+        <PreferenceCategory android:title="@string/preference_display">
+            <ListPreference android:entries="@array/mapprovider_choices" android:title="@string/mapprovider_title" android:key="mapprovider" android:summary="@string/mapprovider_summary" android:defaultValue="0" android:entryValues="@array/mapprovider_values" />
+            <ListPreference android:entries="@array/trackcoloring_choices" android:title="@string/trackcoloring_title" android:key="trackcoloring" android:summary="@string/trackcoloring_summary" android:defaultValue="2" android:entryValues="@array/trackcoloring_values" />
+            <ListPreference android:entries="@array/units_choices" android:title="@string/units_title" android:key="units" android:summary="@string/units_summary" android:defaultValue="0" android:entryValues="@array/units_values" />
+            <EditTextPreference android:title="@string/units_implement_width_title" android:key="units_implement_width" android:summary="@string/units_implement_width_summary" android:defaultValue="@string/units_implement_width" android:dialogMessage="@string/units_implement_width_message" android:inputType="phone" />
+            <CheckBoxPreference android:title="@string/showspeed_title" android:key="showspeed" android:summary="@string/showspeed_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/showaltitude_title" android:key="showaltitude" android:summary="@string/showaltitude_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/showdistance_title" android:key="showdistance" android:summary="@string/showdistance_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/showcompass_title" android:key="COMPASS" android:summary="@string/showcompass_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/showlocation_title" android:key="LOCATION" android:summary="@string/showlocation_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_sharing">
+        <PreferenceCategory android:title="@string/preference_sharing">
+            <EditTextPreference android:title="@string/jogmap_title" android:key="JOGRUNNER_AUTH" android:summary="@string/jogmap_summary" android:defaultValue="" android:dialogMessage="@string/jogrunner_message" />
+            <ListPreference android:entries="@array/osmvisibility_choices" android:title="@string/osmvisibility_title" android:key="OSM_VISIBILITY" android:summary="@string/osmvisibility_summary" android:defaultValue="trackable" android:entryValues="@array/osmvisibility_values" />
+            <EditTextPreference android:title="@string/sddirectory_title" android:key="SDDIR_DIR" android:summary="@string/sddirectory_summary" android:defaultValue="/OpenGPSTracker/" android:dialogMessage="@string/sddirectory_message" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/preference_stream">
+            <CheckBoxPreference android:title="@string/streamenabled_title" android:key="STREAM_ENABLED" android:summary="@string/streamenabled_summary" android:defaultValue="false" />
+            <EditTextPreference android:singleLine="true" android:title="@string/streambroadcast_time_title" android:key="streambroadcast_time" android:summary="@string/streambroadcast_time_summary" android:dependency="STREAM_ENABLED" android:defaultValue="15" android:dialogMessage="@string/streambroadcast_time_summary" android:inputType="number" />
+            <EditTextPreference android:singleLine="true" android:title="@string/streambroadcast_distance_title" android:key="streambroadcast_distance" android:summary="@string/streambroadcast_distance_summary" android:dependency="STREAM_ENABLED" android:defaultValue="5" android:dialogMessage="@string/streambroadcast_distance_summary" android:inputType="number" />
+            <CheckBoxPreference android:title="@string/voiceover_title" android:key="VOICEOVER_ENABLED" android:summary="@string/voiceover_summary" android:dependency="STREAM_ENABLED" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/customupload_title" android:key="CUSTOMUPLOAD_ENABLED" android:summary="@string/customupload_summary" android:dependency="STREAM_ENABLED" android:defaultValue="false" />
+            <EditTextPreference android:singleLine="true" android:title="@string/customupload_url_title" android:key="CUSTOMUPLOAD_URL" android:summary="@string/customupload_url_summary" android:dependency="CUSTOMUPLOAD_ENABLED" android:defaultValue="http://www.example.com/upload.php?latitude=@LAT@&amp;longitude=@LON@&amp;trackid=@ID@" android:dialogMessage="@string/customupload_url_message" android:inputType="textUri" />
+            <EditTextPreference android:singleLine="true" android:title="@string/customupload_backlog_title" android:key="CUSTOMUPLOAD_BACKLOG" android:summary="@string/customupload_backlog_summary" android:dependency="CUSTOMUPLOAD_ENABLED" android:defaultValue="20" android:dialogMessage="@string/customupload_backlog_message" android:inputType="number" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ast/DestructuringForm
+ (super java/lang/Object)
+ (source "DestructuringForm.java")
+
+
+(method (attrs public abstract ) isDestructuring()boolean
+)
+
+(method (attrs public abstract ) setIsDestructuring(boolean )void
+)
+
+)

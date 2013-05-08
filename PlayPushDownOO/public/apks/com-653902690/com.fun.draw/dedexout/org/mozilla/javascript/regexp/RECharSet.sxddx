@@ -1,0 +1,32 @@
+(class (attrs final ) org/mozilla/javascript/regexp/RECharSet
+ (super java/lang/Object)
+ (source "NativeRegExp.java")
+ (implements java/io/Serializable)
+
+ (field (attrs static final ) serialVersionUID long -6594754); 0xff9b5f3e )
+ (field (attrs volatile transient ) bits [array byte] )
+ (field (attrs volatile transient ) converted boolean )
+ (field (attrs ) length int )
+ (field (attrs volatile transient ) sense boolean )
+ (field (attrs ) startIndex int )
+ (field (attrs ) strlength int )
+
+(method (attrs ) <init>(int int int )void
+  (limit registers 4)
+  ; this: v0 ([object org/mozilla/javascript/regexp/RECharSet])
+  ; parameter[0] : v1 (int)
+  ; parameter[1] : v2 (int)
+  ; parameter[2] : v3 (int)
+  (line 2736)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (line 2737)
+  (iput v1 v0 org/mozilla/javascript/regexp/RECharSet.length int)
+  (line 2738)
+  (iput v2 v0 org/mozilla/javascript/regexp/RECharSet.startIndex int)
+  (line 2739)
+  (iput v3 v0 org/mozilla/javascript/regexp/RECharSet.strlength int)
+  (line 2740)
+  (return-void )
+ )
+
+)

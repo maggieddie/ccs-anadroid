@@ -1,0 +1,17 @@
+*****************************************
+*					*
+*	Least Permission Report		*
+*					*
+*****************************************
+
+
+Permissions the app asked for (ASKED):
+android.permission.INTERNET
+android.permission.ACCESS_NETWORK_STATE
+Permissions detected by Anadroid:
+
+android.permission.INTERNET
+Vulnerabilities:
+
+	ASKED >= USED	
+android.permission.ACCESS_NETWORK_STATE

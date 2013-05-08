@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Callable
+ (super java/lang/Object)
+ (source "Callable.java")
+
+
+(method (attrs public abstract ) call([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object java/lang/Object]
+)
+
+)

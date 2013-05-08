@@ -1,0 +1,40 @@
+(class (attrs ) org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl
+ (super java/security/SecureClassLoader)
+ (source "SecureCaller.java")
+
+
+(method (attrs ) <init>([object java/lang/ClassLoader] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl])
+  ; parameter[0] : v1 ([object java/lang/ClassLoader])
+  (line 145)
+  (invoke-direct {v0 v1} java/security/SecureClassLoader/<init> [object java/lang/ClassLoader] )
+  (line 146)
+  (return-void )
+ )
+
+(method (attrs ) defineAndLinkClass([object java/lang/String] [array byte] [object java/security/CodeSource] )[object java/lang/Class]
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/String;"  "[B"  "Ljava/security/CodeSource;"  ")"  "Ljava/lang/Class"  "<*>;")
+  )
+  (limit registers 11)
+  ; this: v7 ([object org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl])
+  ; parameter[0] : v8 ([object java/lang/String])
+  ; parameter[1] : v9 ([array byte])
+  ; parameter[2] : v10 ([object java/security/CodeSource])
+  (line 150)
+  (const/4 v3 0)
+  (array-length v4 v9)
+  (move-object v0 v7)
+  (move-object v1 v8)
+  (move-object v2 v9)
+  (move-object v5 v10)
+  (invoke-virtual/range {v0 .. v5} org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl/defineClass [object java/lang/String] [array byte] int int [object java/security/CodeSource] )
+  (move-result-object v6)
+  (line 151)
+  (invoke-virtual {v7 v6} org/mozilla/javascript/SecureCaller$SecureClassLoaderImpl/resolveClass [object java/lang/Class] )
+  (line 152)
+  (return-object v6)
+)
+
+)

@@ -1,0 +1,3 @@
+android.permission.VIBRATE
+android.permission.WRITE_EXTERNAL_STORAGE
+

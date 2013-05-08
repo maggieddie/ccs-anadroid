@@ -1,0 +1,73 @@
+(class (attrs public ) org/mozilla/javascript/ast/Assignment
+ (super org/mozilla/javascript/ast/InfixExpression)
+ (source "Assignment.java")
+
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  (line 47)
+  (invoke-direct {v0} org/mozilla/javascript/ast/InfixExpression/<init> )
+  (line 48)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  ; parameter[0] : v1 (int)
+  (line 51)
+  (invoke-direct {v0 v1} org/mozilla/javascript/ast/InfixExpression/<init> int )
+  (line 52)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int int )void
+  (limit registers 3)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  ; parameter[0] : v1 (int)
+  ; parameter[1] : v2 (int)
+  (line 55)
+  (invoke-direct {v0 v1 v2} org/mozilla/javascript/ast/InfixExpression/<init> int int )
+  (line 56)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int int [object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] )void
+  (limit registers 5)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  ; parameter[0] : v1 (int)
+  ; parameter[1] : v2 (int)
+  ; parameter[2] : v3 ([object org/mozilla/javascript/ast/AstNode])
+  ; parameter[3] : v4 ([object org/mozilla/javascript/ast/AstNode])
+  (line 59)
+  (invoke-direct {v0 v1 v2 v3 v4} org/mozilla/javascript/ast/InfixExpression/<init> int int [object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] )
+  (line 60)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int [object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] int )void
+  (limit registers 5)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  ; parameter[0] : v1 (int)
+  ; parameter[1] : v2 ([object org/mozilla/javascript/ast/AstNode])
+  ; parameter[2] : v3 ([object org/mozilla/javascript/ast/AstNode])
+  ; parameter[3] : v4 (int)
+  (line 68)
+  (invoke-direct {v0 v1 v2 v3 v4} org/mozilla/javascript/ast/InfixExpression/<init> int [object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] int )
+  (line 69)
+  (return-void )
+ )
+
+(method (attrs public ) <init>([object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] )void
+  (limit registers 3)
+  ; this: v0 ([object org/mozilla/javascript/ast/Assignment])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/ast/AstNode])
+  ; parameter[1] : v2 ([object org/mozilla/javascript/ast/AstNode])
+  (line 63)
+  (invoke-direct {v0 v1 v2} org/mozilla/javascript/ast/InfixExpression/<init> [object org/mozilla/javascript/ast/AstNode] [object org/mozilla/javascript/ast/AstNode] )
+  (line 64)
+  (return-void )
+ )
+
+)

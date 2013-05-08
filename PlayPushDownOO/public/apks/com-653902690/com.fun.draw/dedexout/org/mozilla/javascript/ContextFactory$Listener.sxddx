@@ -1,0 +1,12 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ContextFactory$Listener
+ (super java/lang/Object)
+ (source "ContextFactory.java")
+
+
+(method (attrs public abstract ) contextCreated([object org/mozilla/javascript/Context] )void
+)
+
+(method (attrs public abstract ) contextReleased([object org/mozilla/javascript/Context] )void
+)
+
+)

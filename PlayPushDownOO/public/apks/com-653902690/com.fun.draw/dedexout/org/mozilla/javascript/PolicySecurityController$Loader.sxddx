@@ -1,0 +1,54 @@
+(class (attrs ) org/mozilla/javascript/PolicySecurityController$Loader
+ (super java/security/SecureClassLoader)
+ (source "PolicySecurityController.java")
+ (implements org/mozilla/javascript/GeneratedClassLoader)
+
+ (field (attrs private final ) codeSource [object java/security/CodeSource] )
+
+(method (attrs ) <init>([object java/lang/ClassLoader] [object java/security/CodeSource] )void
+  (limit registers 3)
+  ; this: v0 ([object org/mozilla/javascript/PolicySecurityController$Loader])
+  ; parameter[0] : v1 ([object java/lang/ClassLoader])
+  ; parameter[1] : v2 ([object java/security/CodeSource])
+  (line 87)
+  (invoke-direct {v0 v1} java/security/SecureClassLoader/<init> [object java/lang/ClassLoader] )
+  (line 88)
+  (iput-object v2 v0 org/mozilla/javascript/PolicySecurityController$Loader.codeSource [object java/security/CodeSource])
+  (line 89)
+  (return-void )
+ )
+
+(method (attrs public ) defineClass([object java/lang/String] [array byte] )[object java/lang/Class]
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/String;"  "[B)"  "Ljava/lang/Class"  "<*>;")
+  )
+  (limit registers 9)
+  ; this: v6 ([object org/mozilla/javascript/PolicySecurityController$Loader])
+  ; parameter[0] : v7 ([object java/lang/String])
+  ; parameter[1] : v8 ([array byte])
+  (line 93)
+  (const/4 v3 0)
+  (array-length v4 v8)
+  (iget-object v5 v6 org/mozilla/javascript/PolicySecurityController$Loader.codeSource [object java/security/CodeSource])
+  (move-object v0 v6)
+  (move-object v1 v7)
+  (move-object v2 v8)
+  (invoke-virtual/range {v0 .. v5} org/mozilla/javascript/PolicySecurityController$Loader/defineClass [object java/lang/String] [array byte] int int [object java/security/CodeSource] )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+(method (attrs public ) linkClass([object java/lang/Class] )void
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/Class"  "<*>;)V")
+  )
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/PolicySecurityController$Loader])
+  ; parameter[0] : v1 ([object java/lang/Class])
+  (line 98)
+  (invoke-virtual {v0 v1} org/mozilla/javascript/PolicySecurityController$Loader/resolveClass [object java/lang/Class] )
+  (line 99)
+  (return-void )
+)
+
+)

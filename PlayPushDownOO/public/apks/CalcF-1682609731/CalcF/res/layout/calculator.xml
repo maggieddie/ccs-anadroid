@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="56.0sp" android:typeface="normal" android:textStyle="normal" android:gravity="bottom" android:id="@id/txtCalc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zero" android:cursorVisible="false" android:singleLine="true" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnC" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/clear" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnSeven" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/seven" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnEight" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/eight" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnNine" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nine" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnDivide" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/divide" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnFour" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/four" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnFive" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/five" android:layout_weight="1.0" android:onClick="button5Clicked" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnSix" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/six" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnMultiply" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/multiply" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnOne" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/one" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnTwo" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/two" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnThree" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/three" android:layout_weight="1.0" />
+        <Button android:textSize="24.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnMinus" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/minus" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:textSize="23.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnDecimal" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/period" android:layout_weight="1.0" />
+        <Button android:textSize="23.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnZero" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zero" android:layout_weight="1.0" />
+        <Button android:textSize="23.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnEquals" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/equal" android:layout_weight="1.0" />
+        <Button android:textSize="23.0sp" android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@id/btnPlus" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/plus" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

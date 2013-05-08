@@ -1,0 +1,16 @@
+(class (attrs public final ) com/fun/draw/R$string
+ (super java/lang/Object)
+ (source "R.java")
+
+ (field (attrs public static final ) app_name int 2130903040); 0x7f030000 )
+ (field (attrs public static final ) view_source int 2130903041); 0x7f030001 )
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object com/fun/draw/R$string])
+  (line 22)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (return-void )
+ )
+
+)

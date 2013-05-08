@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ContextAction
+ (super java/lang/Object)
+ (source "ContextAction.java")
+
+
+(method (attrs public abstract ) run([object org/mozilla/javascript/Context] )[object java/lang/Object]
+)
+
+)

@@ -1,0 +1,55 @@
+(class (attrs public ) org/mozilla/javascript/ContinuationPending
+ (super java/lang/RuntimeException)
+ (source "ContinuationPending.java")
+
+ (field (attrs private static final ) serialVersionUID long -857776353); 0xccdf5f1f )
+ (field (attrs private ) applicationState [object java/lang/Object] )
+ (field (attrs private ) continuationState [object org/mozilla/javascript/NativeContinuation] )
+
+(method (attrs ) <init>([object org/mozilla/javascript/NativeContinuation] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ContinuationPending])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/NativeContinuation])
+  (line 63)
+  (invoke-direct {v0} java/lang/RuntimeException/<init> )
+  (line 64)
+  (iput-object v1 v0 org/mozilla/javascript/ContinuationPending.continuationState [object org/mozilla/javascript/NativeContinuation])
+  (line 65)
+  (return-void )
+ )
+
+(method (attrs public ) getApplicationState()[object java/lang/Object]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ContinuationPending])
+  (line 97)
+  (iget-object v0 v1 org/mozilla/javascript/ContinuationPending.applicationState [object java/lang/Object])
+  (return-object v0)
+)
+
+(method (attrs public ) getContinuation()[object java/lang/Object]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ContinuationPending])
+  (line 74)
+  (iget-object v0 v1 org/mozilla/javascript/ContinuationPending.continuationState [object org/mozilla/javascript/NativeContinuation])
+  (return-object v0)
+)
+
+(method (attrs ) getContinuationState()[object org/mozilla/javascript/NativeContinuation]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ContinuationPending])
+  (line 81)
+  (iget-object v0 v1 org/mozilla/javascript/ContinuationPending.continuationState [object org/mozilla/javascript/NativeContinuation])
+  (return-object v0)
+)
+
+(method (attrs public ) setApplicationState([object java/lang/Object] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ContinuationPending])
+  ; parameter[0] : v1 ([object java/lang/Object])
+  (line 90)
+  (iput-object v1 v0 org/mozilla/javascript/ContinuationPending.applicationState [object java/lang/Object])
+  (line 91)
+  (return-void )
+)
+
+)

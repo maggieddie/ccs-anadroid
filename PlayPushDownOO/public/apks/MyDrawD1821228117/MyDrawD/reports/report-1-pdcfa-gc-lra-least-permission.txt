@@ -1,0 +1,17 @@
+*****************************************
+*					*
+*	Least Permission Report		*
+*					*
+*****************************************
+
+
+Permissions the app asked for (ASKED):
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.CHANGE_NETWORK_STATE
+Permissions detected by Anadroid:
+
+Vulnerabilities:
+
+	ASKED >= USED	
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.CHANGE_NETWORK_STATE

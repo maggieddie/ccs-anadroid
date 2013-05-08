@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_distance" />
+        <TextView android:id="@id/stat_distance" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_overallaveragespeed" />
+        <TextView android:id="@id/stat_overallaveragespeed" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_averagespeed" />
+        <TextView android:id="@id/stat_averagespeed" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_maximumspeed" />
+        <TextView android:id="@id/stat_maximumspeed" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_waypoints" />
+        <TextView android:id="@id/stat_waypoints" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_starttime" />
+        <nl.sogeti.android.gpstracker.util.DateView android:id="@id/stat_starttime" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_endtime" />
+        <nl.sogeti.android.gpstracker.util.DateView android:id="@id/stat_endtime" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_elapsedtime" />
+        <TextView android:id="@id/stat_elapsedtime" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:paddingRight="15.0dip" android:text="@string/stat_ascension" />
+        <TextView android:id="@id/stat_ascension" />
+    </TableRow>
+    <nl.sogeti.android.gpstracker.actions.utils.ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <nl.sogeti.android.gpstracker.actions.utils.GraphCanvas android:id="@id/graph_timespeed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <nl.sogeti.android.gpstracker.actions.utils.GraphCanvas android:id="@id/graph_distancespeed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <nl.sogeti.android.gpstracker.actions.utils.GraphCanvas android:id="@id/graph_timealtitude" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <nl.sogeti.android.gpstracker.actions.utils.GraphCanvas android:id="@id/graph_distancealtitude" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </nl.sogeti.android.gpstracker.actions.utils.ViewFlipper>
+</TableLayout>

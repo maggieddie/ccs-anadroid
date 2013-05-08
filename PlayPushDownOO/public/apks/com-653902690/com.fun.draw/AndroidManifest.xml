@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="2" android:versionName="2.2" package="com.fun.draw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".Main" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Draw" android:name=".Draw" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="View Source" android:name=".ViewSource" android:configChanges="keyboardHidden|orientation|screenSize" />
+    </application>
+</manifest>

@@ -1,0 +1,66 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Scriptable
+ (super java/lang/Object)
+ (source "Scriptable.java")
+
+ (field (attrs public static final ) NOT_FOUND [object java/lang/Object] )
+
+(method (attrs static ) <clinit>()void
+  (limit registers 1)
+  (line 76)
+  (sget-object v0 org/mozilla/javascript/UniqueTag.NOT_FOUND [object org/mozilla/javascript/UniqueTag])
+  (sput-object v0 org/mozilla/javascript/Scriptable.NOT_FOUND [object java/lang/Object])
+  (return-void )
+ )
+
+(method (attrs public abstract ) delete(int )void
+)
+
+(method (attrs public abstract ) delete([object java/lang/String] )void
+)
+
+(method (attrs public abstract ) get(int [object org/mozilla/javascript/Scriptable] )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) get([object java/lang/String] [object org/mozilla/javascript/Scriptable] )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) getClassName()[object java/lang/String]
+)
+
+(method (attrs public abstract ) getDefaultValue([object java/lang/Class] )[object java/lang/Object]
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/Class"  "<*>;)"  "Ljava/lang/Object;")
+  )
+)
+
+(method (attrs public abstract ) getIds()[array [object java/lang/Object]]
+)
+
+(method (attrs public abstract ) getParentScope()[object org/mozilla/javascript/Scriptable]
+)
+
+(method (attrs public abstract ) getPrototype()[object org/mozilla/javascript/Scriptable]
+)
+
+(method (attrs public abstract ) has(int [object org/mozilla/javascript/Scriptable] )boolean
+)
+
+(method (attrs public abstract ) has([object java/lang/String] [object org/mozilla/javascript/Scriptable] )boolean
+)
+
+(method (attrs public abstract ) hasInstance([object org/mozilla/javascript/Scriptable] )boolean
+)
+
+(method (attrs public abstract ) put(int [object org/mozilla/javascript/Scriptable] [object java/lang/Object] )void
+)
+
+(method (attrs public abstract ) put([object java/lang/String] [object org/mozilla/javascript/Scriptable] [object java/lang/Object] )void
+)
+
+(method (attrs public abstract ) setParentScope([object org/mozilla/javascript/Scriptable] )void
+)
+
+(method (attrs public abstract ) setPrototype([object org/mozilla/javascript/Scriptable] )void
+)
+
+)

@@ -1,0 +1,45 @@
+(class (attrs public abstract ) org/mozilla/javascript/ast/XmlFragment
+ (super org/mozilla/javascript/ast/AstNode)
+ (source "XmlFragment.java")
+
+
+(method (attrs public ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ast/XmlFragment])
+  (line 53)
+  (invoke-direct {v1} org/mozilla/javascript/ast/AstNode/<init> )
+  (line 50)
+  (const/16 v0 145)
+  (iput v0 v1 org/mozilla/javascript/ast/XmlFragment.type int)
+  (line 54)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/XmlFragment])
+  ; parameter[0] : v2 (int)
+  (line 57)
+  (invoke-direct {v1 v2} org/mozilla/javascript/ast/AstNode/<init> int )
+  (line 50)
+  (const/16 v0 145)
+  (iput v0 v1 org/mozilla/javascript/ast/XmlFragment.type int)
+  (line 58)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int int )void
+  (limit registers 4)
+  ; this: v1 ([object org/mozilla/javascript/ast/XmlFragment])
+  ; parameter[0] : v2 (int)
+  ; parameter[1] : v3 (int)
+  (line 61)
+  (invoke-direct {v1 v2 v3} org/mozilla/javascript/ast/AstNode/<init> int int )
+  (line 50)
+  (const/16 v0 145)
+  (iput v0 v1 org/mozilla/javascript/ast/XmlFragment.type int)
+  (line 62)
+  (return-void )
+ )
+
+)

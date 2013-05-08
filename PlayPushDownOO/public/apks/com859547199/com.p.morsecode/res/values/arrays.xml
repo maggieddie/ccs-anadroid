@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mess_arrays">
+        <item>SOS</item>
+        <item>Warning</item>
+        <item>Danger</item>
+        <item>Take Cover</item>
+    </string-array>
+</resources>

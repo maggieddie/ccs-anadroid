@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="COLOR_BLACK">-16777216</integer>
+    <integer name="prio_0">0</integer>
+    <integer name="prio_1">-2359296</integer>
+    <integer name="prio_2">-256</integer>
+    <integer name="prio_3">-16711732</integer>
+    <integer name="prio_4">-6684877</integer>
+    <integer name="prio_5">-3355444</integer>
+    <integer name="due_date_color">-4210753</integer>
+    <integer name="today_due_date">-13312</integer>
+    <integer name="expired_due_date">-57521</integer>
+    <integer name="progress_100">-12961222</integer>
+</resources>

@@ -1,0 +1,144 @@
+(class (attrs public abstract ) org/mozilla/javascript/NativeFunction
+ (super org/mozilla/javascript/BaseFunction)
+ (source "NativeFunction.java")
+
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/NativeFunction])
+  (line 52)
+  (invoke-direct {v0} org/mozilla/javascript/BaseFunction/<init> )
+  (return-void )
+ )
+
+(method (attrs final ) decompile(int int )[object java/lang/String]
+  (limit registers 6)
+  ; this: v3 ([object org/mozilla/javascript/NativeFunction])
+  ; parameter[0] : v4 (int)
+  ; parameter[1] : v5 (int)
+  (const/4 v2 1)
+  (line 63)
+  (invoke-virtual {v3} org/mozilla/javascript/NativeFunction/getEncodedSource )
+  (move-result-object v0)
+  (line 64)
+  (if-nez v0 l35fcc)
+  (line 65)
+  (invoke-super {v3 v4 v5} org/mozilla/javascript/BaseFunction/decompile int int )
+  (move-result-object v2)
+  (label l35fca)
+  (line 69)
+  (return-object v2)
+  (label l35fcc)
+  (line 67)
+  (new-instance v1 org/mozilla/javascript/UintMap)
+  (invoke-direct {v1 v2} org/mozilla/javascript/UintMap/<init> int )
+  (line 68)
+  (invoke-virtual {v1 v2 v4} org/mozilla/javascript/UintMap/put int int )
+  (line 69)
+  (invoke-static {v0 v5 v1} org/mozilla/javascript/Decompiler/decompile [object java/lang/String] int [object org/mozilla/javascript/UintMap] )
+  (move-result-object v2)
+  (goto l35fca)
+)
+
+(method (attrs public ) getArity()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeFunction])
+  (line 91)
+  (invoke-virtual {v1} org/mozilla/javascript/NativeFunction/getParamCount )
+  (move-result v0)
+  (return v0)
+)
+
+(method (attrs public ) getDebuggableView()[object org/mozilla/javascript/debug/DebuggableScript]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeFunction])
+  (line 114)
+  (const/4 v0 0)
+  (return-object v0)
+)
+
+(method (attrs public ) getEncodedSource()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeFunction])
+  (line 109)
+  (const/4 v0 0)
+  (return-object v0)
+)
+
+(method (attrs public abstract ) getLanguageVersion()int
+)
+
+(method (attrs public ) getLength()int
+  (limit registers 6)
+  ; this: v5 ([object org/mozilla/javascript/NativeFunction])
+  (line 76)
+  (invoke-virtual {v5} org/mozilla/javascript/NativeFunction/getParamCount )
+  (move-result v2)
+  (label l36044)
+  (line 77)
+  (invoke-virtual {v5} org/mozilla/javascript/NativeFunction/getLanguageVersion )
+  (move-result v3)
+  (const/16 v4 120)
+  (if-eq v3 v4 l36056)
+  (label l36054)
+  (line 85)
+  (return v2)
+  (label l36056)
+  (line 80)
+  (invoke-static {} org/mozilla/javascript/Context/getContext )
+  (nop )
+  (move-result-object v1)
+  (line 81)
+  (invoke-static {v1 v5} org/mozilla/javascript/ScriptRuntime/findFunctionActivation [object org/mozilla/javascript/Context] [object org/mozilla/javascript/Function] )
+  (move-result-object v0)
+  (line 82)
+  (if-eqz v0 l36054)
+  (line 85)
+  (iget-object v3 v0 org/mozilla/javascript/NativeCall.originalArgs [array [object java/lang/Object]])
+  (array-length v2 v3)
+  (goto l36054)
+)
+
+(method (attrs public abstract ) getParamAndVarCount()int
+)
+
+(method (attrs public abstract ) getParamCount()int
+)
+
+(method (attrs public ) getParamOrVarConst(int )boolean
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/NativeFunction])
+  ; parameter[0] : v2 (int)
+  (line 164)
+  (const/4 v0 0)
+  (return v0)
+)
+
+(method (attrs public abstract ) getParamOrVarName(int )[object java/lang/String]
+)
+
+(method (attrs public ) jsGet_name()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeFunction])
+  (line 101)
+  (invoke-virtual {v1} org/mozilla/javascript/NativeFunction/getFunctionName )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+(method (attrs public ) resumeGenerator([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] int [object java/lang/Object] [object java/lang/Object] )[object java/lang/Object]
+  (limit registers 8)
+  ; this: v2 ([object org/mozilla/javascript/NativeFunction])
+  ; parameter[0] : v3 ([object org/mozilla/javascript/Context])
+  ; parameter[1] : v4 ([object org/mozilla/javascript/Scriptable])
+  ; parameter[2] : v5 (int)
+  ; parameter[3] : v6 ([object java/lang/Object])
+  ; parameter[4] : v7 ([object java/lang/Object])
+  (line 129)
+  (new-instance v0 org/mozilla/javascript/EvaluatorException)
+  (const-string v1 "resumeGenerator() not implemented")
+  (invoke-direct {v0 v1} org/mozilla/javascript/EvaluatorException/<init> [object java/lang/String] )
+  (throw v0)
+)
+
+)

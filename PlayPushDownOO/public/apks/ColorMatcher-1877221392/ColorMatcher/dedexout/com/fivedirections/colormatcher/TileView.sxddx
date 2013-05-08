@@ -1,0 +1,30 @@
+(class (attrs public ) com/fivedirections/colormatcher/TileView
+ (super android/widget/ImageView)
+ (source "TileView.java")
+
+
+(method (attrs public ) <init>([object android/content/Context] )void
+  (limit registers 2)
+  ; this: v0 ([object com/fivedirections/colormatcher/TileView])
+  ; parameter[0] : v1 ([object android/content/Context])
+  (line 9)
+  (invoke-direct {v0 v1} android/widget/ImageView/<init> [object android/content/Context] )
+  (line 10)
+  (return-void )
+ )
+
+(method (attrs public ) setImageResource(int )void
+  (limit registers 3)
+  ; this: v1 ([object com/fivedirections/colormatcher/TileView])
+  ; parameter[0] : v2 (int)
+  (line 13)
+  (invoke-super {v1 v2} android/widget/ImageView/setImageResource int )
+  (line 14)
+  (invoke-static {v2} java/lang/Integer/valueOf int )
+  (move-result-object v0)
+  (invoke-virtual {v1 v0} com/fivedirections/colormatcher/TileView/setTag [object java/lang/Object] )
+  (line 15)
+  (return-void )
+)
+
+)

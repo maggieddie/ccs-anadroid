@@ -1,0 +1,17 @@
+*****************************************
+*					*
+*	Least Permission Report		*
+*					*
+*****************************************
+
+
+Permissions the app asked for (ASKED):
+android.permission.VIBRATE
+android.permission.WRITE_EXTERNAL_STORAGE
+Permissions detected by Anadroid:
+
+Vulnerabilities:
+
+	ASKED >= USED	
+android.permission.VIBRATE
+android.permission.WRITE_EXTERNAL_STORAGE

@@ -1,0 +1,26 @@
+(class (attrs ) org/mozilla/javascript/regexp/RECompiled
+ (super java/lang/Object)
+ (source "NativeRegExp.java")
+ (implements java/io/Serializable)
+
+ (field (attrs static final ) serialVersionUID long -88360049); 0xfabbbb8f )
+ (field (attrs ) anchorCh int )
+ (field (attrs ) classCount int )
+ (field (attrs ) classList [array [object org/mozilla/javascript/regexp/RECharSet]] )
+ (field (attrs ) flags int )
+ (field (attrs ) parenCount int )
+ (field (attrs ) program [array byte] )
+ (field (attrs ) source [array char] )
+
+(method (attrs ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/regexp/RECompiled])
+  (line 2564)
+  (invoke-direct {v1} java/lang/Object/<init> )
+  (line 2574)
+  (const/4 v0 15)
+  (iput v0 v1 org/mozilla/javascript/regexp/RECompiled.anchorCh int)
+  (return-void )
+ )
+
+)

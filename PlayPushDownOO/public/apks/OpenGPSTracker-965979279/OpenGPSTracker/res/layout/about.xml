@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/about_comments" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center_horizontal" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/about_copyright" />
+        <View android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/about_license" />
+        <android.webkit.WebView android:layout_gravity="bottom" android:id="@id/license_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" />
+        <View android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/about_contributions" />
+        <android.webkit.WebView android:id="@id/contribution_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" />
+        <View android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/about_notices" />
+        <android.webkit.WebView android:id="@id/notices_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" />
+        <View android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+(class (attrs final ) org/mozilla/javascript/xml/XMLLib$Factory$1
+ (super org/mozilla/javascript/xml/XMLLib$Factory)
+ (source "XMLLib.java")
+
+ (field (attrs final ) val$className [object java/lang/String] )
+
+(method (attrs ) <init>([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/xml/XMLLib$Factory$1])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 58)
+  (iput-object v1 v0 org/mozilla/javascript/xml/XMLLib$Factory$1.val$className [object java/lang/String])
+  (invoke-direct {v0} org/mozilla/javascript/xml/XMLLib$Factory/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) getImplementationClassName()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib$Factory$1])
+  (line 61)
+  (iget-object v0 v1 org/mozilla/javascript/xml/XMLLib$Factory$1.val$className [object java/lang/String])
+  (return-object v0)
+)
+
+)

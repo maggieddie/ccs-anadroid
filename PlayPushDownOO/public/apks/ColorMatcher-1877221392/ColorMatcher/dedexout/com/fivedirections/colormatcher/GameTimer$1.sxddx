@@ -1,0 +1,44 @@
+(class (attrs ) com/fivedirections/colormatcher/GameTimer$1
+ (super android/os/CountDownTimer)
+ (source "GameTimer.java")
+
+ (field (attrs final ) this$0 [object com/fivedirections/colormatcher/GameTimer] )
+
+(method (attrs ) <init>([object com/fivedirections/colormatcher/GameTimer] long long )void
+  (limit registers 6)
+  ; this: v0 ([object com/fivedirections/colormatcher/GameTimer$1])
+  ; parameter[0] : v1 ([object com/fivedirections/colormatcher/GameTimer])
+  ; parameter[1] : v2 (long)
+  ; parameter[2] : v4 (long)
+  (line 1)
+  (iput-object v1 v0 com/fivedirections/colormatcher/GameTimer$1.this$0 [object com/fivedirections/colormatcher/GameTimer])
+  (line 21)
+  (invoke-direct {v0 v2 v3 v4 v5} android/os/CountDownTimer/<init> long long )
+  (return-void )
+ )
+
+(method (attrs public ) onFinish()void
+  (limit registers 2)
+  ; this: v1 ([object com/fivedirections/colormatcher/GameTimer$1])
+  (line 32)
+  (iget-object v0 v1 com/fivedirections/colormatcher/GameTimer$1.this$0 [object com/fivedirections/colormatcher/GameTimer])
+  (invoke-virtual {v0} com/fivedirections/colormatcher/GameTimer/onFinish )
+  (line 34)
+  (return-void )
+)
+
+(method (attrs public ) onTick(long )void
+  (limit registers 4)
+  ; this: v1 ([object com/fivedirections/colormatcher/GameTimer$1])
+  ; parameter[0] : v2 (long)
+  (line 25)
+  (iget-object v0 v1 com/fivedirections/colormatcher/GameTimer$1.this$0 [object com/fivedirections/colormatcher/GameTimer])
+  (iput-wide v2 v0 com/fivedirections/colormatcher/GameTimer.millisRemaining long)
+  (line 26)
+  (iget-object v0 v1 com/fivedirections/colormatcher/GameTimer$1.this$0 [object com/fivedirections/colormatcher/GameTimer])
+  (invoke-virtual {v0 v2 v3} com/fivedirections/colormatcher/GameTimer/onTick long )
+  (line 28)
+  (return-void )
+)
+
+)

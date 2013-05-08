@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="fill_horizontal" android:id="@id/text_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:autoText="false" android:inputType="text" android:imeOptions="actionDone" />
+    <CheckBox android:id="@id/wipe_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wipe" />
+</LinearLayout>

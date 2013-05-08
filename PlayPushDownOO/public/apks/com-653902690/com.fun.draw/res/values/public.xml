@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="layout" name="draw" id="0x7f020000" />
+    <public type="layout" name="main" id="0x7f020001" />
+    <public type="layout" name="view_source" id="0x7f020002" />
+    <public type="string" name="app_name" id="0x7f030000" />
+    <public type="string" name="view_source" id="0x7f030001" />
+    <public type="id" name="view" id="0x7f040000" />
+    <public type="id" name="viewSource" id="0x7f040001" />
+</resources>

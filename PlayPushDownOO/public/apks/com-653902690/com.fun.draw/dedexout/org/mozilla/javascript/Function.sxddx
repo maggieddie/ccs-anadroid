@@ -1,0 +1,14 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Function
+ (super java/lang/Object)
+ (source "Function.java")
+ (implements org/mozilla/javascript/Scriptable)
+ (implements org/mozilla/javascript/Callable)
+
+
+(method (attrs public abstract ) call([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) construct([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object org/mozilla/javascript/Scriptable]
+)
+
+)

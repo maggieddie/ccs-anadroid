@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_tags">Ред. тэги</string>
+    <string name="show_completed_items">Показать готовые</string>
+    <string name="hide_completed_items">Спрятать готовые</string>
+    <string name="add">Ага</string>
+    <string name="rename">Переименовать</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="rename_tag_title">Ред. тэга</string>
+    <string name="new_tag_name_text">Новое имя</string>
+    <string name="tag_already_exists">Такой тэг уже есть</string>
+    <string name="delete_tag_title">Удалить тэг</string>
+    <string name="items_depend_on_tag">Этому тэгу принадлежит %d элементов. Что с ними делать?</string>
+    <string name="move">Переместить</string>
+    <string name="select_tag_title">Выберите тэг</string>
+    <string name="priority">Приоритет</string>
+    <string name="select_prio_title">Выберите приоритет</string>
+    <string name="change_prio">Приоритет</string>
+    <string name="change_progress">Прогресс</string>
+    <string name="select_progress_title">Выберите прогресс</string>
+    <string name="change_tag">Тэг</string>
+    <string name="change_due_date">Срок выполнения</string>
+    <string name="all">Все</string>
+    <string name="unfiled">Без тэга</string>
+    <string name="export">Экспорт</string>
+    <string name="export_file_name">Файл экспорта</string>
+    <string name="exporting_data">Экспортирую</string>
+    <string name="_import">Импорт</string>
+    <string name="import_file_name">Файл импорта</string>
+    <string name="importing_data">Импортирую</string>
+    <string name="error">Ошибка</string>
+    <string name="wipe">Удалить имеющиеся данные</string>
+    <string name="progress">Прогресс</string>
+    <string name="default_due_date">Срок по умолчанию</string>
+    <string name="due_date">Срок</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="one_week_later">Через неделю</string>
+    <string name="no_date">Без срока</string>
+    <string name="choose_date">Выбрать дату…</string>
+    <string name="due_date_format_short">dd.MM</string>
+    <string name="widget_loading">Загрузка виджета…</string>
+    <string name="widget_configure_title">Настройка виджета KTodo</string>
+    <string name="widget_ok">Готово</string>
+    <string name="widget_filtering_options">Фильтрация элементов</string>
+    <string name="widget_hide_completed">Скрыть выполненные</string>
+    <string name="widget_show_only">Показывать только…</string>
+    <string name="widget_show_only_due">Просроченные</string>
+    <string name="widget_show_only_due_x">Истекающие в ближайшие</string>
+    <string name="widget_days">дней</string>
+    <string name="widget_line1">пересоздай</string>
+    <string name="widget_line2">меня</string>
+    <string name="help_summary">Помощь (тащи меня влево)</string>
+    <string name="help_body">"Краткая справка по KTodo
+
+ Основной экран:
+ * таскайте элементы влево, чтобы отредактировать
+ * кидайте вправо, чтобы удалить
+ * длинное нажатие вызывает контекстное меню
+ * тащите кнопку Ага влево, чтобы добавить элемент и сразу перейти на экран редактирования
+ * элементы всегда сортируются по приоритету
+
+ На экране редактирования:
+ * комбобокс наверху меняет тэг элемента
+ * два поля ввода редактируют текст элемента и его расширенное описание
+ * если есть расширенное описание, то на основном экране элемент будет отмечен синим кружком
+ * три кнопки ниже меняют приоритет, прогресс и срок выполнения
+ * попробуйте провести пальцем вдоль кнопок приоритета или прогресса"</string>
+    <string name="sorting">Сортировка</string>
+    <string name="prio_due_summary">Приоритет, срок, имя</string>
+    <string name="due_prio_summary">Срок, приоритет, имя</string>
+    <string name="prio_summary_due">Приоритет, имя, срок</string>
+    <string name="summary_prio_due">Имя, приоритет, срок</string>
+    <string name="due_summary_prio">Срок, имя, приоритет</string>
+    <string name="summary_due_prio">Имя, срок, приоритет</string>
+    <string name="prio_due_summary_t">прио, срок, имя</string>
+    <string name="due_prio_summary_t">срок, прио, имя</string>
+    <string name="prio_summary_due_t">прио, имя, срок</string>
+    <string name="summary_prio_due_t">имя, прио, срок</string>
+    <string name="due_summary_prio_t">срок, имя, прио</string>
+    <string name="summary_due_prio_t">имя, срок, прио</string>
+    <string name="undelete">Восстановить</string>
+    <string name="choose_color_dlg_title">Выбор цвета</string>
+    <string name="prefs_reset_to_defaults">Восстановить значения по умолчанию</string>
+    <string name="prefs_title">Настройки</string>
+    <string name="prefs_bg_color_confirm">bg_col_conf</string>
+    <string name="prefs_default_color_confirm">default_col_conf</string>
+    <string name="prefs_enable_fling_delete">Удаление броском</string>
+    <string name="prefs_enable_fling_delete_s">Удалять элементы выбрасыванием за правый край</string>
+    <string name="prefs_enable_slide_edit">Ред. сдвигом</string>
+    <string name="prefs_enable_slide_edit_s">Редактировать элементы сдвиганием за левый край</string>
+    <string name="prefs_click_anywhere_to_check">Клик где угодно</string>
+    <string name="prefs_click_anywhere_to_check_s">Элемент помечается кликом где угодно или только по галке</string>
+    <string name="prefs_main_list_font_size">Размер элементов</string>
+    <string name="prefs_main_list_font_size_s">Размер шрифта элементов списка</string>
+    <string name="prefs_show_due_date_as_days_left">Срок как кол-во дней</string>
+    <string name="prefs_show_due_date_as_days_left_s">Показывать срок как количество дней до окончания</string>
+    <string name="prefs_colors">Цвета</string>
+    <string name="prefs_prio_colors">Цвета приоритетов</string>
+    <string name="prefs_due_date_colors">Цвета срока</string>
+    <string name="prefs_prio1_color">Цвет приоритета 1</string>
+    <string name="prefs_prio2_color">Цвет приоритета 2</string>
+    <string name="prefs_prio3_color">Цвет приоритета 3</string>
+    <string name="prefs_prio4_color">Цвет приоритета 4</string>
+    <string name="prefs_prio5_color">Цвет приоритета 5</string>
+    <string name="prefs_due_date_color">Цвет срока</string>
+    <string name="prefs_due_today_color">Срок истекает сегодня</string>
+    <string name="prefs_overdue_color">Просроченные</string>
+    <string name="prefs_progress_color">Прогресс</string>
+    <string name="day0">%1d дней</string>
+    <string name="day1">%1d день</string>
+    <string name="day2">%1d дня</string>
+    <string name="day3">%1d дня</string>
+    <string name="day4">%1d дня</string>
+    <string name="day5">%1d дней</string>
+</resources>

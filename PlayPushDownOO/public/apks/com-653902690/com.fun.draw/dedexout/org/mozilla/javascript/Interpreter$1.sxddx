@@ -1,0 +1,6 @@
+(class (attrs ) org/mozilla/javascript/Interpreter$1
+ (super java/lang/Object)
+ (source "Interpreter.java")
+
+
+)

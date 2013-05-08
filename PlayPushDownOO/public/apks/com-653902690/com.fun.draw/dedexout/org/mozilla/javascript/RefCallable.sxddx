@@ -1,0 +1,10 @@
+(interface (attrs public abstract ) org/mozilla/javascript/RefCallable
+ (super java/lang/Object)
+ (source "RefCallable.java")
+ (implements org/mozilla/javascript/Callable)
+
+
+(method (attrs public abstract ) refCall([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object org/mozilla/javascript/Ref]
+)
+
+)

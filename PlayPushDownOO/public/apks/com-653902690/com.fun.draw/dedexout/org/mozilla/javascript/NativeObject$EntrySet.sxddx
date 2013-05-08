@@ -1,0 +1,39 @@
+(class (attrs ) org/mozilla/javascript/NativeObject$EntrySet
+ (super java/util/AbstractSet)
+ (source "NativeObject.java")
+
+ (field (attrs final ) this$0 [object org/mozilla/javascript/NativeObject] )
+
+(method (attrs ) <init>([object org/mozilla/javascript/NativeObject] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/NativeObject$EntrySet])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/NativeObject])
+  (line 478)
+  (iput-object v1 v0 org/mozilla/javascript/NativeObject$EntrySet.this$0 [object org/mozilla/javascript/NativeObject])
+  (invoke-direct {v0} java/util/AbstractSet/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) iterator()[object java/util/Iterator]
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "()"  "Ljava/util/Iterator"  "<"  "Ljava/util/Map$Entry"  "<"  "Ljava/lang/Object;"  "Ljava/lang/Object;"  ">;>;")
+  )
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeObject$EntrySet])
+  (line 481)
+  (new-instance v0 org/mozilla/javascript/NativeObject$EntrySet$1)
+  (invoke-direct {v0 v1} org/mozilla/javascript/NativeObject$EntrySet$1/<init> [object org/mozilla/javascript/NativeObject$EntrySet] )
+  (return-object v0)
+)
+
+(method (attrs public ) size()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/NativeObject$EntrySet])
+  (line 538)
+  (iget-object v0 v1 org/mozilla/javascript/NativeObject$EntrySet.this$0 [object org/mozilla/javascript/NativeObject])
+  (invoke-virtual {v0} org/mozilla/javascript/NativeObject/size )
+  (move-result v0)
+  (return v0)
+)
+
+)

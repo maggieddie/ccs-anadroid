@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="maxThrowVelocity" format="integer" />
+    <attr name="vibrateOnTearOff" format="integer" />
+    <attr name="waitForSlide" format="integer" />
+    <attr name="valuesList" format="string" />
+    <attr name="valueSuffix" format="string" />
+    <attr name="separator" format="string" />
+    <attr name="defaultValueIndex" format="integer" />
+    <attr name="prio0Color" format="color" />
+    <attr name="prio1Color" format="color" />
+    <attr name="prio2Color" format="color" />
+    <attr name="prio3Color" format="color" />
+    <attr name="prio4Color" format="color" />
+    <attr name="prio5Color" format="color" />
+    <attr name="progress0Color" format="color" />
+    <attr name="progress100Color" format="color" />
+    <attr name="dueDateColor" format="color" />
+    <attr name="todayDueDateColor" format="color" />
+    <attr name="expiredDueDateColor" format="color" />
+    <attr name="notesDrawable" format="reference" />
+    <attr name="prioStripeWidth" format="dimension" />
+    <attr name="prioFontSize" format="dimension" />
+    <attr name="notesPrioMarginRight" format="dimension" />
+    <attr name="prioMarginTop" format="dimension" />
+    <attr name="notesDueMarginBottom" format="dimension" />
+    <attr name="dueFontSize" format="dimension" />
+    <attr name="dueMarginRight" format="dimension" />
+    <attr name="inAnim" format="reference" />
+    <attr name="outAnim" format="reference" />
+</resources>

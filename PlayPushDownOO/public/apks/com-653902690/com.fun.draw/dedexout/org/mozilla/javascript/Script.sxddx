@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Script
+ (super java/lang/Object)
+ (source "Script.java")
+
+
+(method (attrs public abstract ) exec([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] )[object java/lang/Object]
+)
+
+)

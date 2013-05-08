@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mapScreen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.maps.MapView android:state_enabled="true" android:id="@id/myMapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="0bmdf4-ggC50QJGdjml6Turq0NJdMhKFQNdhkYA" />
+    <include layout="@layout/map_widgets" />
+</RelativeLayout>

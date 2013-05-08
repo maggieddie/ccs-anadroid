@@ -1,0 +1,36 @@
+(class (attrs final ) org/mozilla/javascript/ScriptRuntime$1
+ (super org/mozilla/javascript/BaseFunction)
+ (source "ScriptRuntime.java")
+
+
+(method (attrs ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/ScriptRuntime$1])
+  (line 84)
+  (invoke-direct {v0} org/mozilla/javascript/BaseFunction/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) call([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object java/lang/Object]
+  (limit registers 6)
+  ; this: v1 ([object org/mozilla/javascript/ScriptRuntime$1])
+  ; parameter[0] : v2 ([object org/mozilla/javascript/Context])
+  ; parameter[1] : v3 ([object org/mozilla/javascript/Scriptable])
+  ; parameter[2] : v4 ([object org/mozilla/javascript/Scriptable])
+  ; parameter[3] : v5 ([array [object java/lang/Object]])
+  (line 87)
+  (const-string v0 "msg.op.not.allowed")
+  (invoke-static {v0} org/mozilla/javascript/ScriptRuntime/typeError0 [object java/lang/String] )
+  (move-result-object v0)
+  (throw v0)
+)
+
+(method (attrs public ) getLength()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ScriptRuntime$1])
+  (line 91)
+  (const/4 v0 0)
+  (return v0)
+)
+
+)

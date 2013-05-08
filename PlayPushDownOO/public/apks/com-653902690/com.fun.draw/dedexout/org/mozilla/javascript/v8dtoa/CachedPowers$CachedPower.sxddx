@@ -1,0 +1,27 @@
+(class (attrs ) org/mozilla/javascript/v8dtoa/CachedPowers$CachedPower
+ (super java/lang/Object)
+ (source "CachedPowers.java")
+
+ (field (attrs ) binaryExponent short )
+ (field (attrs ) decimalExponent short )
+ (field (attrs ) significand long )
+
+(method (attrs ) <init>(long short short )void
+  (limit registers 5)
+  ; this: v0 ([object org/mozilla/javascript/v8dtoa/CachedPowers$CachedPower])
+  ; parameter[0] : v1 (long)
+  ; parameter[1] : v3 (short)
+  ; parameter[2] : v4 (short)
+  (line 43)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (line 44)
+  (iput-wide v1 v0 org/mozilla/javascript/v8dtoa/CachedPowers$CachedPower.significand long)
+  (line 45)
+  (iput-short v3 v0 org/mozilla/javascript/v8dtoa/CachedPowers$CachedPower.binaryExponent short)
+  (line 46)
+  (iput-short v4 v0 org/mozilla/javascript/v8dtoa/CachedPowers$CachedPower.decimalExponent short)
+  (line 47)
+  (return-void )
+ )
+
+)

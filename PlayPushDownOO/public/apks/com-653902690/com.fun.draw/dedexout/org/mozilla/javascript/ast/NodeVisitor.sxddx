@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ast/NodeVisitor
+ (super java/lang/Object)
+ (source "NodeVisitor.java")
+
+
+(method (attrs public abstract ) visit([object org/mozilla/javascript/ast/AstNode] )boolean
+)
+
+)

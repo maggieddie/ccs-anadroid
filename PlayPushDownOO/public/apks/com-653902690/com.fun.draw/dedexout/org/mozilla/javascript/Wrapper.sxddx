@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Wrapper
+ (super java/lang/Object)
+ (source "Wrapper.java")
+
+
+(method (attrs public abstract ) unwrap()[object java/lang/Object]
+)
+
+)

@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ClassShutter
+ (super java/lang/Object)
+ (source "ClassShutter.java")
+
+
+(method (attrs public abstract ) visibleToScripts([object java/lang/String] )boolean
+)
+
+)

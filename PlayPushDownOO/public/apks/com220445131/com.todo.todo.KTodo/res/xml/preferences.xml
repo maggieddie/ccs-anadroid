@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/prefs_enable_fling_delete" android:key="delByFling" android:summary="@string/prefs_enable_fling_delete_s" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_enable_slide_edit" android:key="slideToEdit" android:summary="@string/prefs_enable_slide_edit_s" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_click_anywhere_to_check" android:key="clickAnywhereToCheck" android:summary="@string/prefs_click_anywhere_to_check_s" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_show_due_date_as_days_left" android:key="dueAsDaysLeft" android:summary="@string/prefs_show_due_date_as_days_left_s" android:defaultValue="false" />
+    <ListPreference android:entries="@array/main_list_font_sizes" android:title="@string/prefs_main_list_font_size" android:key="mainListFontSize" android:summary="@string/prefs_main_list_font_size_s" android:defaultValue="default" android:entryValues="@array/main_list_font_sizes" />
+    <PreferenceScreen android:title="@string/prefs_colors">
+        <android.preference.PreferenceCategory android:title="@string/prefs_prio_colors">
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_prio1_color" android:key="prio1Color" android:defaultValue="@integer/prio_1" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_prio2_color" android:key="prio2Color" android:defaultValue="@integer/prio_2" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_prio3_color" android:key="prio3Color" android:defaultValue="@integer/prio_3" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_prio4_color" android:key="prio4Color" android:defaultValue="@integer/prio_4" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_prio5_color" android:key="prio5Color" android:defaultValue="@integer/prio_5" />
+        </android.preference.PreferenceCategory>
+        <android.preference.PreferenceCategory android:title="@string/prefs_due_date_colors" android:key="dueColors">
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_due_date_color" android:key="dueDateColor" android:defaultValue="@integer/due_date_color" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_due_today_color" android:key="dueTodayColor" android:defaultValue="@integer/today_due_date" />
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_overdue_color" android:key="overdueColor" android:defaultValue="@integer/expired_due_date" />
+        </android.preference.PreferenceCategory>
+        <android.preference.PreferenceCategory android:title="@string/prefs_progress_color" android:key="progressColors">
+            <net.margaritov.preference.colorpicker.ColorPickerPreference android:title="@string/prefs_progress_color" android:key="progressColor" android:defaultValue="@integer/progress_100" />
+        </android.preference.PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

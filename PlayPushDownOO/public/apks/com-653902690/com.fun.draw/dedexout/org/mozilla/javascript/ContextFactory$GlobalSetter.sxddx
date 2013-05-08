@@ -1,0 +1,12 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ContextFactory$GlobalSetter
+ (super java/lang/Object)
+ (source "ContextFactory.java")
+
+
+(method (attrs public abstract ) getContextFactoryGlobal()[object org/mozilla/javascript/ContextFactory]
+)
+
+(method (attrs public abstract ) setContextFactoryGlobal([object org/mozilla/javascript/ContextFactory] )void
+)
+
+)

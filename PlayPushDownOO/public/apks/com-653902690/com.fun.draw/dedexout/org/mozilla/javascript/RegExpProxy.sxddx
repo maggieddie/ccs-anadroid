@@ -1,0 +1,27 @@
+(interface (attrs public abstract ) org/mozilla/javascript/RegExpProxy
+ (super java/lang/Object)
+ (source "RegExpProxy.java")
+
+ (field (attrs public static final ) RA_MATCH int 1); 0x1 )
+ (field (attrs public static final ) RA_REPLACE int 2); 0x2 )
+ (field (attrs public static final ) RA_SEARCH int 3); 0x3 )
+
+(method (attrs public abstract ) action([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] int )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) compileRegExp([object org/mozilla/javascript/Context] [object java/lang/String] [object java/lang/String] )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) find_split([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object java/lang/String] [object java/lang/String] [object org/mozilla/javascript/Scriptable] [array int] [array int] [array boolean] [array [array [object java/lang/String]]] )int
+)
+
+(method (attrs public abstract ) isRegExp([object org/mozilla/javascript/Scriptable] )boolean
+)
+
+(method (attrs public abstract ) js_split([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object java/lang/String] [array [object java/lang/Object]] )[object java/lang/Object]
+)
+
+(method (attrs public abstract ) wrapRegExp([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object java/lang/Object] )[object org/mozilla/javascript/Scriptable]
+)
+
+)

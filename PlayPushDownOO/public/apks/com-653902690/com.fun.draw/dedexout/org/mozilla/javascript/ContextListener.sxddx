@@ -1,0 +1,13 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ContextListener
+ (super java/lang/Object)
+ (source "ContextListener.java")
+ (implements org/mozilla/javascript/ContextFactory$Listener)
+
+
+(method (attrs public abstract ) contextEntered([object org/mozilla/javascript/Context] )void
+)
+
+(method (attrs public abstract ) contextExited([object org/mozilla/javascript/Context] )void
+)
+
+)

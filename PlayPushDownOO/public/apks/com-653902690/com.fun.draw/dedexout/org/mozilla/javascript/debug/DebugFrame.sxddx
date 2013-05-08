@@ -1,0 +1,21 @@
+(interface (attrs public abstract ) org/mozilla/javascript/debug/DebugFrame
+ (super java/lang/Object)
+ (source "DebugFrame.java")
+
+
+(method (attrs public abstract ) onDebuggerStatement([object org/mozilla/javascript/Context] )void
+)
+
+(method (attrs public abstract ) onEnter([object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )void
+)
+
+(method (attrs public abstract ) onExceptionThrown([object org/mozilla/javascript/Context] [object java/lang/Throwable] )void
+)
+
+(method (attrs public abstract ) onExit([object org/mozilla/javascript/Context] boolean [object java/lang/Object] )void
+)
+
+(method (attrs public abstract ) onLineChange([object org/mozilla/javascript/Context] int )void
+)
+
+)

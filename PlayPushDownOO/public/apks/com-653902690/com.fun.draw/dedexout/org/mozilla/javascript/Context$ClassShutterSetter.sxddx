@@ -1,0 +1,12 @@
+(interface (attrs public abstract ) org/mozilla/javascript/Context$ClassShutterSetter
+ (super java/lang/Object)
+ (source "Context.java")
+
+
+(method (attrs public abstract ) getClassShutter()[object org/mozilla/javascript/ClassShutter]
+)
+
+(method (attrs public abstract ) setClassShutter([object org/mozilla/javascript/ClassShutter] )void
+)
+
+)

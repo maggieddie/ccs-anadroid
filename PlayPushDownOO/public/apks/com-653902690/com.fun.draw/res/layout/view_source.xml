@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fun.draw.widget.FixedScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:typeface="monospace" android:id="@id/view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</com.fun.draw.widget.FixedScrollView>

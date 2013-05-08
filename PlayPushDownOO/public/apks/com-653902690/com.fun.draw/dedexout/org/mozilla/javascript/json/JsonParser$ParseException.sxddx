@@ -1,0 +1,26 @@
+(class (attrs public ) org/mozilla/javascript/json/JsonParser$ParseException
+ (super java/lang/Exception)
+ (source "JsonParser.java")
+
+
+(method (attrs ) <init>([object java/lang/Exception] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/json/JsonParser$ParseException])
+  ; parameter[0] : v1 ([object java/lang/Exception])
+  (line 368)
+  (invoke-direct {v0 v1} java/lang/Exception/<init> [object java/lang/Throwable] )
+  (line 369)
+  (return-void )
+ )
+
+(method (attrs ) <init>([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/json/JsonParser$ParseException])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 364)
+  (invoke-direct {v0 v1} java/lang/Exception/<init> [object java/lang/String] )
+  (line 365)
+  (return-void )
+ )
+
+)

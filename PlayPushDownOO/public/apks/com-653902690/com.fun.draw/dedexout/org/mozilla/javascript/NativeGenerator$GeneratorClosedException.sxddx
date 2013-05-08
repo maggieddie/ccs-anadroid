@@ -1,0 +1,15 @@
+(class (attrs public ) org/mozilla/javascript/NativeGenerator$GeneratorClosedException
+ (super java/lang/RuntimeException)
+ (source "NativeGenerator.java")
+
+ (field (attrs private static final ) serialVersionUID long 1807720357); 0x6bbf9fa5 )
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/NativeGenerator$GeneratorClosedException])
+  (line 285)
+  (invoke-direct {v0} java/lang/RuntimeException/<init> )
+  (return-void )
+ )
+
+)

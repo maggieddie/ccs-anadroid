@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/listitem_name" android:background="#ff554d4d" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="40.0dip" android:text="Name of something" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/from_textview" android:background="#ff554d4d" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/from" android:layout_below="@id/listitem_name" />
+    <nl.sogeti.android.gpstracker.util.DateView android:id="@id/listitem_from" android:background="#ff554d4d" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/from_textview" android:layout_below="@id/listitem_name" android:layout_alignRight="@id/listitem_name" />
+</RelativeLayout>

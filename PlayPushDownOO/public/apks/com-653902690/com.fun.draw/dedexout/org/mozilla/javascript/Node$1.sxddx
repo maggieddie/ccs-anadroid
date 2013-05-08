@@ -1,0 +1,6 @@
+(class (attrs ) org/mozilla/javascript/Node$1
+ (super java/lang/Object)
+ (source "Node.java")
+
+
+)

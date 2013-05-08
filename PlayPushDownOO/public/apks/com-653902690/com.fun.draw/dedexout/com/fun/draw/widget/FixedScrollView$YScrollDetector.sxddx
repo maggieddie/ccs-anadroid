@@ -1,0 +1,39 @@
+(class (attrs ) com/fun/draw/widget/FixedScrollView$YScrollDetector
+ (super android/view/GestureDetector$SimpleOnGestureListener)
+ (source "FixedScrollView.java")
+
+ (field (attrs final ) this$0 [object com/fun/draw/widget/FixedScrollView] )
+
+(method (attrs ) <init>([object com/fun/draw/widget/FixedScrollView] )void
+  (limit registers 2)
+  ; this: v0 ([object com/fun/draw/widget/FixedScrollView$YScrollDetector])
+  ; parameter[0] : v1 ([object com/fun/draw/widget/FixedScrollView])
+  (line 31)
+  (iput-object v1 v0 com/fun/draw/widget/FixedScrollView$YScrollDetector.this$0 [object com/fun/draw/widget/FixedScrollView])
+  (invoke-direct {v0} android/view/GestureDetector$SimpleOnGestureListener/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) onScroll([object android/view/MotionEvent] [object android/view/MotionEvent] float float )boolean
+  (limit registers 7)
+  ; this: v2 ([object com/fun/draw/widget/FixedScrollView$YScrollDetector])
+  ; parameter[0] : v3 ([object android/view/MotionEvent])
+  ; parameter[1] : v4 ([object android/view/MotionEvent])
+  ; parameter[2] : v5 (float)
+  ; parameter[3] : v6 (float)
+  (line 35)
+  (invoke-static {v6} java/lang/Math/abs float )
+  (move-result v0)
+  (invoke-static {v5} java/lang/Math/abs float )
+  (move-result v1)
+  (cmpl-float v0 v0 v1)
+  (if-lez v0 l1f0f0)
+  (const/4 v0 1)
+  (label l1f0ee)
+  (return v0)
+  (label l1f0f0)
+  (const/4 v0 0)
+  (goto l1f0ee)
+)
+
+)

@@ -1,0 +1,206 @@
+(class (attrs public abstract ) org/mozilla/javascript/xml/XMLLib
+ (super java/lang/Object)
+ (source "XMLLib.java")
+
+ (field (attrs private static final ) XML_LIB_KEY [object java/lang/Object] )
+
+(method (attrs static ) <clinit>()void
+  (limit registers 1)
+  (line 45)
+  (new-instance v0 java/lang/Object)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (sput-object v0 org/mozilla/javascript/xml/XMLLib.XML_LIB_KEY [object java/lang/Object])
+  (return-void )
+ )
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 43)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (line 56)
+  (return-void )
+ )
+
+(method (attrs public static ) extractFromScope([object org/mozilla/javascript/Scriptable] )[object org/mozilla/javascript/xml/XMLLib]
+  (limit registers 4)
+  ; parameter[0] : v3 ([object org/mozilla/javascript/Scriptable])
+  (line 86)
+  (invoke-static {v3} org/mozilla/javascript/xml/XMLLib/extractFromScopeOrNull [object org/mozilla/javascript/Scriptable] )
+  (move-result-object v0)
+  (line 87)
+  (if-eqz v0 l6f492)
+  (line 88)
+  (return-object v0)
+  (label l6f492)
+  (line 90)
+  (const-string v2 "msg.XML.not.available")
+  (invoke-static {v2} org/mozilla/javascript/ScriptRuntime/getMessage0 [object java/lang/String] )
+  (move-result-object v1)
+  (line 91)
+  (invoke-static {v1} org/mozilla/javascript/Context/reportRuntimeError [object java/lang/String] )
+  (move-result-object v2)
+  (throw v2)
+ )
+
+(method (attrs public static ) extractFromScopeOrNull([object org/mozilla/javascript/Scriptable] )[object org/mozilla/javascript/xml/XMLLib]
+  (limit registers 3)
+  ; parameter[0] : v2 ([object org/mozilla/javascript/Scriptable])
+  (line 71)
+  (invoke-static {v2} org/mozilla/javascript/ScriptRuntime/getLibraryScopeOrNull [object org/mozilla/javascript/Scriptable] )
+  (move-result-object v0)
+  (line 72)
+  (if-nez v0 l6f4c8)
+  (line 74)
+  (const/4 v1 0)
+  (label l6f4c6)
+  (line 81)
+  (return-object v1)
+  (label l6f4c8)
+  (line 79)
+  (const-string v1 "XML")
+  (invoke-static {v0 v1} org/mozilla/javascript/ScriptableObject/getProperty [object org/mozilla/javascript/Scriptable] [object java/lang/String] )
+  (line 81)
+  (sget-object v1 org/mozilla/javascript/xml/XMLLib.XML_LIB_KEY [object java/lang/Object])
+  (invoke-virtual {v0 v1} org/mozilla/javascript/ScriptableObject/getAssociatedValue [object java/lang/Object] )
+  (move-result-object v1)
+  (check-cast v1 [object org/mozilla/javascript/xml/XMLLib])
+  (goto l6f4c6)
+ )
+
+(method (attrs protected final ) bindToScope([object org/mozilla/javascript/Scriptable] )[object org/mozilla/javascript/xml/XMLLib]
+  (limit registers 4)
+  ; this: v2 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v3 ([object org/mozilla/javascript/Scriptable])
+  (line 96)
+  (invoke-static {v3} org/mozilla/javascript/ScriptRuntime/getLibraryScopeOrNull [object org/mozilla/javascript/Scriptable] )
+  (move-result-object v0)
+  (line 97)
+  (if-nez v0 l6f50c)
+  (line 99)
+  (new-instance v1 java/lang/IllegalStateException)
+  (invoke-direct {v1} java/lang/IllegalStateException/<init> )
+  (throw v1)
+  (label l6f50c)
+  (line 101)
+  (sget-object v1 org/mozilla/javascript/xml/XMLLib.XML_LIB_KEY [object java/lang/Object])
+  (invoke-virtual {v0 v1 v2} org/mozilla/javascript/ScriptableObject/associateValue [object java/lang/Object] [object java/lang/Object] )
+  (move-result-object v1)
+  (check-cast v1 [object org/mozilla/javascript/xml/XMLLib])
+  (return-object v1)
+)
+
+(method (attrs public abstract ) escapeAttributeValue([object java/lang/Object] )[object java/lang/String]
+)
+
+(method (attrs public abstract ) escapeTextValue([object java/lang/Object] )[object java/lang/String]
+)
+
+(method (attrs public ) getPrettyIndent()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 171)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) isIgnoreComments()boolean
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 155)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) isIgnoreProcessingInstructions()boolean
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 159)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) isIgnoreWhitespace()boolean
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 163)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) isPrettyPrinting()boolean
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  (line 167)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public abstract ) isXMLName([object org/mozilla/javascript/Context] [object java/lang/Object] )boolean
+)
+
+(method (attrs public abstract ) nameRef([object org/mozilla/javascript/Context] [object java/lang/Object] [object java/lang/Object] [object org/mozilla/javascript/Scriptable] int )[object org/mozilla/javascript/Ref]
+)
+
+(method (attrs public abstract ) nameRef([object org/mozilla/javascript/Context] [object java/lang/Object] [object org/mozilla/javascript/Scriptable] int )[object org/mozilla/javascript/Ref]
+)
+
+(method (attrs public ) setIgnoreComments(boolean )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v2 (boolean)
+  (line 135)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) setIgnoreProcessingInstructions(boolean )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v2 (boolean)
+  (line 143)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) setIgnoreWhitespace(boolean )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v2 (boolean)
+  (line 139)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) setPrettyIndent(int )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v2 (int)
+  (line 151)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public ) setPrettyPrinting(boolean )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/xml/XMLLib])
+  ; parameter[0] : v2 (boolean)
+  (line 147)
+  (new-instance v0 java/lang/UnsupportedOperationException)
+  (invoke-direct {v0} java/lang/UnsupportedOperationException/<init> )
+  (throw v0)
+)
+
+(method (attrs public abstract ) toDefaultXmlNamespace([object org/mozilla/javascript/Context] [object java/lang/Object] )[object java/lang/Object]
+)
+
+)

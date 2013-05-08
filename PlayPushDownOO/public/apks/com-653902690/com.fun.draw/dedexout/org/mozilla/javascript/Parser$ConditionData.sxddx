@@ -1,0 +1,31 @@
+(class (attrs ) org/mozilla/javascript/Parser$ConditionData
+ (super java/lang/Object)
+ (source "Parser.java")
+
+ (field (attrs ) condition [object org/mozilla/javascript/ast/AstNode] )
+ (field (attrs ) lp int )
+ (field (attrs ) rp int )
+
+(method (attrs private ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/Parser$ConditionData])
+  (const/4 v0 15)
+  (line 897)
+  (invoke-direct {v1} java/lang/Object/<init> )
+  (line 899)
+  (iput v0 v1 org/mozilla/javascript/Parser$ConditionData.lp int)
+  (line 900)
+  (iput v0 v1 org/mozilla/javascript/Parser$ConditionData.rp int)
+  (return-void )
+ )
+
+(method (attrs ) <init>([object org/mozilla/javascript/Parser$1] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/Parser$ConditionData])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/Parser$1])
+  (line 897)
+  (invoke-direct {v0} org/mozilla/javascript/Parser$ConditionData/<init> )
+  (return-void )
+ )
+
+)

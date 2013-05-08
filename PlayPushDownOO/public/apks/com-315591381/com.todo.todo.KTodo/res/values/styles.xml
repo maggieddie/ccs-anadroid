@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WidgetBackground">
+        <item name="android:background">@drawable/widget_bg</item>
+    </style>
+    <style name="Text" />
+    <style name="Text.Widget" parent="@style/Text">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+    <style name="Text.Widget.Loading" parent="@style/Text.Widget">
+        <item name="android:textColor">@color/semi_white</item>
+    </style>
+    <style name="Text.Widget.Tag" parent="@style/Text.Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Text.Widget.Item" parent="@style/Text.Widget">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Text.Widget.Item_Compressed" parent="@style/Text.Widget">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="MyWindowTitleBackground">
+        <item name="android:background">#ff444444</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme">
+        <item name="android:windowTitleBackgroundStyle">@style/MyWindowTitleBackground</item>
+    </style>
+</resources>

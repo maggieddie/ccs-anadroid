@@ -1,0 +1,92 @@
+(class (attrs public ) org/mozilla/javascript/ast/XmlString
+ (super org/mozilla/javascript/ast/XmlFragment)
+ (source "XmlString.java")
+
+ (field (attrs private ) xml [object java/lang/String] )
+
+(method (attrs public ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/ast/XmlString])
+  (line 50)
+  (invoke-direct {v0} org/mozilla/javascript/ast/XmlFragment/<init> )
+  (line 51)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/XmlString])
+  ; parameter[0] : v1 (int)
+  (line 54)
+  (invoke-direct {v0 v1} org/mozilla/javascript/ast/XmlFragment/<init> int )
+  (line 55)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int [object java/lang/String] )void
+  (limit registers 3)
+  ; this: v0 ([object org/mozilla/javascript/ast/XmlString])
+  ; parameter[0] : v1 (int)
+  ; parameter[1] : v2 ([object java/lang/String])
+  (line 58)
+  (invoke-direct {v0 v1} org/mozilla/javascript/ast/XmlFragment/<init> int )
+  (line 59)
+  (invoke-virtual {v0 v2} org/mozilla/javascript/ast/XmlString/setXml [object java/lang/String] )
+  (line 60)
+  (return-void )
+ )
+
+(method (attrs public ) getXml()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ast/XmlString])
+  (line 79)
+  (iget-object v0 v1 org/mozilla/javascript/ast/XmlString.xml [object java/lang/String])
+  (return-object v0)
+)
+
+(method (attrs public ) setXml([object java/lang/String] )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/XmlString])
+  ; parameter[0] : v2 ([object java/lang/String])
+  (line 69)
+  (invoke-virtual {v1 v2} org/mozilla/javascript/ast/XmlString/assertNotNull [object java/lang/Object] )
+  (line 70)
+  (iput-object v2 v1 org/mozilla/javascript/ast/XmlString.xml [object java/lang/String])
+  (line 71)
+  (invoke-virtual {v2} java/lang/String/length )
+  (move-result v0)
+  (invoke-virtual {v1 v0} org/mozilla/javascript/ast/XmlString/setLength int )
+  (line 72)
+  (return-void )
+)
+
+(method (attrs public ) toSource(int )[object java/lang/String]
+  (limit registers 4)
+  ; this: v2 ([object org/mozilla/javascript/ast/XmlString])
+  ; parameter[0] : v3 (int)
+  (line 84)
+  (new-instance v0 java/lang/StringBuilder)
+  (invoke-direct {v0} java/lang/StringBuilder/<init> )
+  (invoke-virtual {v2 v3} org/mozilla/javascript/ast/XmlString/makeIndent int )
+  (move-result-object v1)
+  (invoke-virtual {v0 v1} java/lang/StringBuilder/append [object java/lang/String] )
+  (move-result-object v0)
+  (iget-object v1 v2 org/mozilla/javascript/ast/XmlString.xml [object java/lang/String])
+  (invoke-virtual {v0 v1} java/lang/StringBuilder/append [object java/lang/String] )
+  (move-result-object v0)
+  (invoke-virtual {v0} java/lang/StringBuilder/toString )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+(method (attrs public ) visit([object org/mozilla/javascript/ast/NodeVisitor] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/XmlString])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/ast/NodeVisitor])
+  (line 92)
+  (invoke-interface {v1 v0} org/mozilla/javascript/ast/NodeVisitor/visit [object org/mozilla/javascript/ast/AstNode] )
+  (line 93)
+  (return-void )
+)
+
+)

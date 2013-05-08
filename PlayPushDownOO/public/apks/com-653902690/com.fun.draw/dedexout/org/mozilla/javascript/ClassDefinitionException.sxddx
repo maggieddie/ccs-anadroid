@@ -1,0 +1,17 @@
+(class (attrs public ) org/mozilla/javascript/ClassDefinitionException
+ (super java/lang/RuntimeException)
+ (source "ClassDefinitionException.java")
+
+ (field (attrs static final ) serialVersionUID long -1243709537); 0xb5de7f9f )
+
+(method (attrs public ) <init>([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ClassDefinitionException])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 51)
+  (invoke-direct {v0 v1} java/lang/RuntimeException/<init> [object java/lang/String] )
+  (line 52)
+  (return-void )
+ )
+
+)

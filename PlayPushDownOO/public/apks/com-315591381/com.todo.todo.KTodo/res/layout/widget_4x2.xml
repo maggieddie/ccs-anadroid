@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/WidgetBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/widget_tag_bar" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/widget_app_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/widget_tag" android:paddingTop="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="tag" android:layout_weight="1.0" style="@style/Text.Widget.Tag" />
+        <ImageView android:id="@id/widget_setup_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/widget_tag_bar">
+        <TextView android:id="@id/widget_item1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widget_line1" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item1_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widget_line2" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item2_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item3" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item3_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item4" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item4_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item5" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item5_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item6" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item6_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item7" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item7_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item8_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item9" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item9_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item10" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item10_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item11" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item11_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item12" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item12_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item13" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item13_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item14" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item14_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item15" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item15_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item16" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item16_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item17" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+        <ImageView android:id="@id/widget_item17_line" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:tint="@color/widget_sep" />
+        <TextView android:id="@id/widget_item18" android:paddingLeft="300.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="item8" style="@style/Text.Widget.Item" />
+    </LinearLayout>
+</RelativeLayout>

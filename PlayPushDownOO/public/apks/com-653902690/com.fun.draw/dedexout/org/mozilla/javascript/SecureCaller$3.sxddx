@@ -1,0 +1,25 @@
+(class (attrs final ) org/mozilla/javascript/SecureCaller$3
+ (super java/lang/Object)
+ (source "SecureCaller.java")
+ (implements java/security/PrivilegedAction)
+
+
+(method (attrs ) <init>()void
+  (limit registers 1)
+  ; this: v0 ([object org/mozilla/javascript/SecureCaller$3])
+  (line 159)
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) run()[object java/lang/Object]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/SecureCaller$3])
+  (line 162)
+  (invoke-static {} org/mozilla/javascript/SecureCaller/access$100 )
+  (nop )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+)

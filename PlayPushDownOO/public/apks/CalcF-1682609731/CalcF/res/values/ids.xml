@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="txtCalc">false</item>
+    <item type="id" name="btnC">false</item>
+    <item type="id" name="btnSeven">false</item>
+    <item type="id" name="btnEight">false</item>
+    <item type="id" name="btnNine">false</item>
+    <item type="id" name="btnDivide">false</item>
+    <item type="id" name="btnFour">false</item>
+    <item type="id" name="btnFive">false</item>
+    <item type="id" name="btnSix">false</item>
+    <item type="id" name="btnMultiply">false</item>
+    <item type="id" name="btnOne">false</item>
+    <item type="id" name="btnTwo">false</item>
+    <item type="id" name="btnThree">false</item>
+    <item type="id" name="btnMinus">false</item>
+    <item type="id" name="btnDecimal">false</item>
+    <item type="id" name="btnZero">false</item>
+    <item type="id" name="btnEquals">false</item>
+    <item type="id" name="btnPlus">false</item>
+</resources>

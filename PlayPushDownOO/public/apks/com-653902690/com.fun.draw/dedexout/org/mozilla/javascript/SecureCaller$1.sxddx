@@ -1,0 +1,28 @@
+(class (attrs final ) org/mozilla/javascript/SecureCaller$1
+ (super java/lang/Object)
+ (source "SecureCaller.java")
+ (implements java/security/PrivilegedAction)
+
+ (field (attrs final ) val$thread [object java/lang/Thread] )
+
+(method (attrs ) <init>([object java/lang/Thread] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/SecureCaller$1])
+  ; parameter[0] : v1 ([object java/lang/Thread])
+  (line 81)
+  (iput-object v1 v0 org/mozilla/javascript/SecureCaller$1.val$thread [object java/lang/Thread])
+  (invoke-direct {v0} java/lang/Object/<init> )
+  (return-void )
+ )
+
+(method (attrs public ) run()[object java/lang/Object]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/SecureCaller$1])
+  (line 83)
+  (iget-object v0 v1 org/mozilla/javascript/SecureCaller$1.val$thread [object java/lang/Thread])
+  (invoke-virtual {v0} java/lang/Thread/getContextClassLoader )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+)

@@ -1,0 +1,7 @@
+Control states: 6560
+Transitions / DSG edges: 6851
+Total amount of VarPointsto entries, and the mean: 2422 | 3.0
+Total amount of ThrowPointsto entries, and the mean: 0 | 0.0
+Total amount of invoking objects, and the mean: 765 | 2.0
+ E-C Links: 0 | 0.0
+Analysis run for: 563239 milliseconds

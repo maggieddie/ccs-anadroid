@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/ScriptRuntime$MessageProvider
+ (super java/lang/Object)
+ (source "ScriptRuntime.java")
+
+
+(method (attrs public abstract ) getMessage([object java/lang/String] [array [object java/lang/Object]] )[object java/lang/String]
+)
+
+)

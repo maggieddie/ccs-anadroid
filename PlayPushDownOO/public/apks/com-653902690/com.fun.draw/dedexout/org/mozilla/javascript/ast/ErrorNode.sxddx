@@ -1,0 +1,83 @@
+(class (attrs public ) org/mozilla/javascript/ast/ErrorNode
+ (super org/mozilla/javascript/ast/AstNode)
+ (source "ErrorNode.java")
+
+ (field (attrs private ) message [object java/lang/String] )
+
+(method (attrs public ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ast/ErrorNode])
+  (line 55)
+  (invoke-direct {v1} org/mozilla/javascript/ast/AstNode/<init> )
+  (line 52)
+  (const/4 v0 15)
+  (iput v0 v1 org/mozilla/javascript/ast/ErrorNode.type int)
+  (line 56)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/ErrorNode])
+  ; parameter[0] : v2 (int)
+  (line 59)
+  (invoke-direct {v1 v2} org/mozilla/javascript/ast/AstNode/<init> int )
+  (line 52)
+  (const/4 v0 15)
+  (iput v0 v1 org/mozilla/javascript/ast/ErrorNode.type int)
+  (line 60)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int int )void
+  (limit registers 4)
+  ; this: v1 ([object org/mozilla/javascript/ast/ErrorNode])
+  ; parameter[0] : v2 (int)
+  ; parameter[1] : v3 (int)
+  (line 63)
+  (invoke-direct {v1 v2 v3} org/mozilla/javascript/ast/AstNode/<init> int int )
+  (line 52)
+  (const/4 v0 15)
+  (iput v0 v1 org/mozilla/javascript/ast/ErrorNode.type int)
+  (line 64)
+  (return-void )
+ )
+
+(method (attrs public ) getMessage()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ast/ErrorNode])
+  (line 70)
+  (iget-object v0 v1 org/mozilla/javascript/ast/ErrorNode.message [object java/lang/String])
+  (return-object v0)
+)
+
+(method (attrs public ) setMessage([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/ErrorNode])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 77)
+  (iput-object v1 v0 org/mozilla/javascript/ast/ErrorNode.message [object java/lang/String])
+  (line 78)
+  (return-void )
+)
+
+(method (attrs public ) toSource(int )[object java/lang/String]
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/ErrorNode])
+  ; parameter[0] : v2 (int)
+  (line 82)
+  (const-string v0 "")
+  (return-object v0)
+)
+
+(method (attrs public ) visit([object org/mozilla/javascript/ast/NodeVisitor] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/ErrorNode])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/ast/NodeVisitor])
+  (line 91)
+  (invoke-interface {v1 v0} org/mozilla/javascript/ast/NodeVisitor/visit [object org/mozilla/javascript/ast/AstNode] )
+  (line 92)
+  (return-void )
+)
+
+)

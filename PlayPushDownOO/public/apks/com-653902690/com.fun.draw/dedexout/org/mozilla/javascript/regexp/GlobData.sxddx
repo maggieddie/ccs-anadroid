@@ -1,0 +1,27 @@
+(class (attrs final ) org/mozilla/javascript/regexp/GlobData
+ (super java/lang/Object)
+ (source "RegExpImpl.java")
+
+ (field (attrs ) arrayobj [object org/mozilla/javascript/Scriptable] )
+ (field (attrs ) charBuf [object java/lang/StringBuilder] )
+ (field (attrs ) dollar int )
+ (field (attrs ) global boolean )
+ (field (attrs ) lambda [object org/mozilla/javascript/Function] )
+ (field (attrs ) leftIndex int )
+ (field (attrs ) mode int )
+ (field (attrs ) optarg int )
+ (field (attrs ) repstr [object java/lang/String] )
+ (field (attrs ) str [object java/lang/String] )
+
+(method (attrs ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/regexp/GlobData])
+  (line 739)
+  (invoke-direct {v1} java/lang/Object/<init> )
+  (line 754)
+  (const/4 v0 15)
+  (iput v0 v1 org/mozilla/javascript/regexp/GlobData.dollar int)
+  (return-void )
+ )
+
+)

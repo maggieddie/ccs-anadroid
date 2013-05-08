@@ -1,0 +1,18 @@
+(interface (attrs public abstract ) org/mozilla/javascript/GeneratedClassLoader
+ (super java/lang/Object)
+ (source "GeneratedClassLoader.java")
+
+
+(method (attrs public abstract ) defineClass([object java/lang/String] [array byte] )[object java/lang/Class]
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/String;"  "[B)"  "Ljava/lang/Class"  "<*>;")
+  )
+)
+
+(method (attrs public abstract ) linkClass([object java/lang/Class] )void
+  (annotation systemVisibility [object dalvik/annotation/Signature]
+    (value [array [object java/lang/String]] "("  "Ljava/lang/Class"  "<*>;)V")
+  )
+)
+
+)

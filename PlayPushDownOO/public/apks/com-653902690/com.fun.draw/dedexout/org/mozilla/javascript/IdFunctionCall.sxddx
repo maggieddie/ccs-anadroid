@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/IdFunctionCall
+ (super java/lang/Object)
+ (source "IdFunctionCall.java")
+
+
+(method (attrs public abstract ) execIdCall([object org/mozilla/javascript/IdFunctionObject] [object org/mozilla/javascript/Context] [object org/mozilla/javascript/Scriptable] [object org/mozilla/javascript/Scriptable] [array [object java/lang/Object]] )[object java/lang/Object]
+)
+
+)

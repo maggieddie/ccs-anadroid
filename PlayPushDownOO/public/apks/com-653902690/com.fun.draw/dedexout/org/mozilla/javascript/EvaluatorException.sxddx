@@ -1,0 +1,87 @@
+(class (attrs public ) org/mozilla/javascript/EvaluatorException
+ (super org/mozilla/javascript/RhinoException)
+ (source "EvaluatorException.java")
+
+ (field (attrs static final ) serialVersionUID long -156275781); 0xf6af6bbb )
+
+(method (attrs public ) <init>([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/EvaluatorException])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 51)
+  (invoke-direct {v0 v1} org/mozilla/javascript/RhinoException/<init> [object java/lang/String] )
+  (line 52)
+  (return-void )
+ )
+
+(method (attrs public ) <init>([object java/lang/String] [object java/lang/String] int )void
+  (limit registers 10)
+  ; this: v6 ([object org/mozilla/javascript/EvaluatorException])
+  ; parameter[0] : v7 ([object java/lang/String])
+  ; parameter[1] : v8 ([object java/lang/String])
+  ; parameter[2] : v9 (int)
+  (line 67)
+  (const/4 v4 0)
+  (const/4 v5 0)
+  (move-object v0 v6)
+  (move-object v1 v7)
+  (move-object v2 v8)
+  (move v3 v9)
+  (invoke-direct/range {v0 .. v5} org/mozilla/javascript/EvaluatorException/<init> [object java/lang/String] [object java/lang/String] int [object java/lang/String] int )
+  (line 68)
+  (return-void )
+ )
+
+(method (attrs public ) <init>([object java/lang/String] [object java/lang/String] int [object java/lang/String] int )void
+  (limit registers 6)
+  ; this: v0 ([object org/mozilla/javascript/EvaluatorException])
+  ; parameter[0] : v1 ([object java/lang/String])
+  ; parameter[1] : v2 ([object java/lang/String])
+  ; parameter[2] : v3 (int)
+  ; parameter[3] : v4 ([object java/lang/String])
+  ; parameter[4] : v5 (int)
+  (line 87)
+  (invoke-direct {v0 v1} org/mozilla/javascript/RhinoException/<init> [object java/lang/String] )
+  (line 88)
+  (invoke-virtual {v0 v2 v3 v4 v5} org/mozilla/javascript/EvaluatorException/recordErrorOrigin [object java/lang/String] int [object java/lang/String] int )
+  (line 89)
+  (return-void )
+ )
+
+(method (attrs public ) getColumnNumber()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/EvaluatorException])
+  (line 112)
+  (invoke-virtual {v1} org/mozilla/javascript/EvaluatorException/columnNumber )
+  (move-result v0)
+  (return v0)
+)
+
+(method (attrs public ) getLineNumber()int
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/EvaluatorException])
+  (line 104)
+  (invoke-virtual {v1} org/mozilla/javascript/EvaluatorException/lineNumber )
+  (move-result v0)
+  (return v0)
+)
+
+(method (attrs public ) getLineSource()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/EvaluatorException])
+  (line 120)
+  (invoke-virtual {v1} org/mozilla/javascript/EvaluatorException/lineSource )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+(method (attrs public ) getSourceName()[object java/lang/String]
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/EvaluatorException])
+  (line 96)
+  (invoke-virtual {v1} org/mozilla/javascript/EvaluatorException/sourceName )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+)

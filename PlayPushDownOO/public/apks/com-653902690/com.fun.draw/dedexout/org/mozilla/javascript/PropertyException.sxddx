@@ -1,0 +1,17 @@
+(class (attrs public ) org/mozilla/javascript/PropertyException
+ (super java/lang/RuntimeException)
+ (source "PropertyException.java")
+
+ (field (attrs static final ) serialVersionUID long -1879067051); 0x8fffb655 )
+
+(method (attrs public ) <init>([object java/lang/String] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/PropertyException])
+  ; parameter[0] : v1 ([object java/lang/String])
+  (line 51)
+  (invoke-direct {v0 v1} java/lang/RuntimeException/<init> [object java/lang/String] )
+  (line 52)
+  (return-void )
+ )
+
+)

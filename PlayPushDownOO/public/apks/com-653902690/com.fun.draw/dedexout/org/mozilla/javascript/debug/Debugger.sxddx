@@ -1,0 +1,12 @@
+(interface (attrs public abstract ) org/mozilla/javascript/debug/Debugger
+ (super java/lang/Object)
+ (source "Debugger.java")
+
+
+(method (attrs public abstract ) getFrame([object org/mozilla/javascript/Context] [object org/mozilla/javascript/debug/DebuggableScript] )[object org/mozilla/javascript/debug/DebugFrame]
+)
+
+(method (attrs public abstract ) handleCompilationDone([object org/mozilla/javascript/Context] [object org/mozilla/javascript/debug/DebuggableScript] [object java/lang/String] )void
+)
+
+)

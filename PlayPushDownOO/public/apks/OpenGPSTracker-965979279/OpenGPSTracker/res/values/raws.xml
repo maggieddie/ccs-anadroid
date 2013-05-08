@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="raw" name="conversion_from_mps">3.6</item>
+    <item type="raw" name="conversion_from_meter">0.0010</item>
+    <item type="raw" name="conversion_from_meter_to_height">1.0</item>
+    <item type="raw" name="conversion_from_mps_to_knot">1.943844</item>
+    <item type="raw" name="conversion_from_meter_to_nauticmile">5.39957E-4</item>
+    <item type="raw" name="conversion_from_mps_to_acres_hour">0.2711438</item>
+    <item type="raw" name="conversion_from_mps_to_hectare_hour">0.36</item>
+</resources>

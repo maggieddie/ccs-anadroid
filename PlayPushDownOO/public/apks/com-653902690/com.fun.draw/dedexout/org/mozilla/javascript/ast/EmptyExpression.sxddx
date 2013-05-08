@@ -1,0 +1,65 @@
+(class (attrs public ) org/mozilla/javascript/ast/EmptyExpression
+ (super org/mozilla/javascript/ast/AstNode)
+ (source "EmptyExpression.java")
+
+
+(method (attrs public ) <init>()void
+  (limit registers 2)
+  ; this: v1 ([object org/mozilla/javascript/ast/EmptyExpression])
+  (line 54)
+  (invoke-direct {v1} org/mozilla/javascript/ast/AstNode/<init> )
+  (line 51)
+  (const/16 v0 128)
+  (iput v0 v1 org/mozilla/javascript/ast/EmptyExpression.type int)
+  (line 55)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int )void
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/EmptyExpression])
+  ; parameter[0] : v2 (int)
+  (line 58)
+  (invoke-direct {v1 v2} org/mozilla/javascript/ast/AstNode/<init> int )
+  (line 51)
+  (const/16 v0 128)
+  (iput v0 v1 org/mozilla/javascript/ast/EmptyExpression.type int)
+  (line 59)
+  (return-void )
+ )
+
+(method (attrs public ) <init>(int int )void
+  (limit registers 4)
+  ; this: v1 ([object org/mozilla/javascript/ast/EmptyExpression])
+  ; parameter[0] : v2 (int)
+  ; parameter[1] : v3 (int)
+  (line 62)
+  (invoke-direct {v1 v2 v3} org/mozilla/javascript/ast/AstNode/<init> int int )
+  (line 51)
+  (const/16 v0 128)
+  (iput v0 v1 org/mozilla/javascript/ast/EmptyExpression.type int)
+  (line 63)
+  (return-void )
+ )
+
+(method (attrs public ) toSource(int )[object java/lang/String]
+  (limit registers 3)
+  ; this: v1 ([object org/mozilla/javascript/ast/EmptyExpression])
+  ; parameter[0] : v2 (int)
+  (line 67)
+  (invoke-virtual {v1 v2} org/mozilla/javascript/ast/EmptyExpression/makeIndent int )
+  (move-result-object v0)
+  (return-object v0)
+)
+
+(method (attrs public ) visit([object org/mozilla/javascript/ast/NodeVisitor] )void
+  (limit registers 2)
+  ; this: v0 ([object org/mozilla/javascript/ast/EmptyExpression])
+  ; parameter[0] : v1 ([object org/mozilla/javascript/ast/NodeVisitor])
+  (line 75)
+  (invoke-interface {v1 v0} org/mozilla/javascript/ast/NodeVisitor/visit [object org/mozilla/javascript/ast/AstNode] )
+  (line 76)
+  (return-void )
+)
+
+)

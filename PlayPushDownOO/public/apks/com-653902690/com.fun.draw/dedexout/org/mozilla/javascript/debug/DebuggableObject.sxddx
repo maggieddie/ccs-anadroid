@@ -1,0 +1,9 @@
+(interface (attrs public abstract ) org/mozilla/javascript/debug/DebuggableObject
+ (super java/lang/Object)
+ (source "DebuggableObject.java")
+
+
+(method (attrs public abstract ) getAllIds()[array [object java/lang/Object]]
+)
+
+)

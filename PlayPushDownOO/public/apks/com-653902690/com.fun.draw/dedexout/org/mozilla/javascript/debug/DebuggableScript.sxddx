@@ -1,0 +1,42 @@
+(interface (attrs public abstract ) org/mozilla/javascript/debug/DebuggableScript
+ (super java/lang/Object)
+ (source "DebuggableScript.java")
+
+
+(method (attrs public abstract ) getFunction(int )[object org/mozilla/javascript/debug/DebuggableScript]
+)
+
+(method (attrs public abstract ) getFunctionCount()int
+)
+
+(method (attrs public abstract ) getFunctionName()[object java/lang/String]
+)
+
+(method (attrs public abstract ) getLineNumbers()[array int]
+)
+
+(method (attrs public abstract ) getParamAndVarCount()int
+)
+
+(method (attrs public abstract ) getParamCount()int
+)
+
+(method (attrs public abstract ) getParamOrVarName(int )[object java/lang/String]
+)
+
+(method (attrs public abstract ) getParent()[object org/mozilla/javascript/debug/DebuggableScript]
+)
+
+(method (attrs public abstract ) getSourceName()[object java/lang/String]
+)
+
+(method (attrs public abstract ) isFunction()boolean
+)
+
+(method (attrs public abstract ) isGeneratedScript()boolean
+)
+
+(method (attrs public abstract ) isTopLevel()boolean
+)
+
+)
