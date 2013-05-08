@@ -11,7 +11,7 @@
 - README	 			: the file
 
 
-## Anadroid is implemented in Scala, deployed as a web service using Scala Play Framework,
+## Anadroid is implemented in Scala, deployed as a web service using Scala Play Framework
 accessible at
 
 **pegasus.cs.utah.edu:8080 (this port will be open after May 9th 2013)**
@@ -68,7 +68,7 @@ Then, notice that the project folder will contain the following sub-folders:
    `clean`     
 
 
-** If compilation failed, you probably have to fix the library path issues.**
+** If compilation failed, you probably have to fix the library path issues. **
 The  best way to do is to build a new play project and copy related files from PlayPushDownOO to the new play project.
 
 and so do the following:
