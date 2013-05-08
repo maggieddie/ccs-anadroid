@@ -1,33 +1,30 @@
-*****************************************
-*					*
-*    Anadroid v2 compile & install 	*
-*					*
-*****************************************
-
-Top level project folder:
-
-- apktool: extract out the dex and resources files
-- jdex2sex: disassembler to s-expresssion formed smali
-- PlayPushDownOO : analytic engine + web interface + c/s communication
-- play-2.0.4	 : the binary image from http://www.playframework.com/documentation/2.0.4/Home
-- test-apks	 : some old test results produced by the analytic engine with only state graphs based on old android-knowledge
-- README	 : the file
+# Anadroid v2 compile & install 	
 
 
-Anadroid is implemented in Scala, deployed as a web service using Scala Play Framework,
+## Top level project folder:
+
+- apktool.tar.gz  		: extract out the dex and resources files
+- jdex2sex.tar.gz 		: disassembler to s-expresssion formed smali
+- PlayPushDownOO  		: analytic engine + web interface + c/s communication
+- play-2.0.4.tar.gz		: the binary image from http://www.playframework.com/documentation/2.0.4/Home
+- test-apks	 			: some old test results produced by the analytic engine with only state graphs based on old android-knowledge
+- README	 			: the file
+
+
+## Anadroid is implemented in Scala, deployed as a web service using Scala Play Framework,
 accessible at
 
-pegasus.cs.utah.edu:8080 (this port will be open after May 9th 2013)
+**pegasus.cs.utah.edu:8080 (this port will be open after May 9th 2013)**
 
 or
 
-pegasus.cs.utah.edu:9090
+**pegasus.cs.utah.edu:9090**
 
 Google Chrome is recommended, with javascript enabled.
 Details are on the web page.
 
 
-simple apk to test:
+### simple apk to test:
 
 jpgnetnoloop.apk (from Keity and tomdroid), in PlayPushDownOO
 
@@ -35,11 +32,11 @@ other tested apks are in test-apks.
 
 Contact liangsy@cs.utah.edu or my adviser might@cs.utah.edu for any questions.
 
----
+ 
 
-If you want to deploy yourself, here are the instructions:
+## If you want to deploy yourself (not recommended), here are the instructions:
 
-+ ENVIRONMENT
+### ENVIRONMENT
 
 1. Install Scala compiler 2.9.1
 2. JDK 1.6 or later
@@ -49,7 +46,7 @@ If you want to deploy yourself, here are the instructions:
    Eclipse IDE for Java Developers
    Version: Helios Service Release 2
 
-+ How to compile and run:
+### How to compile and run:
 
 First make sure you get the right version of Scala and Play framework.
 
@@ -60,16 +57,19 @@ Then, notice that the project folder will contain the following sub-folders:
 - PlayPushDownOO (the analytic engine + web service)
 - play-2.0.4
 
-> cd PlayPushDownOO
-> ../play-2.0.4/play
+ `cd PlayPushDownOO`
+ 
+ `../play-2.0.4/play`
 
-  > compile  # this is for compiling the PlayPushDownOO
-  > run	     # run the web service, default is localhost:9000
-  > clean    # 
+   `compile`  # this is for compiling the PlayPushDownOO
+   
+   `run`	  # run the web service, default is localhost:9000
+   
+   `clean`     
 
 
-If compilation failed, you probably have to fix the library path issues.
-and the best way to do is to build a new play project and copy related files from PlayPushDownOO to the new play project.
+** If compilation failed, you probably have to fix the library path issues.**
+The  best way to do is to build a new play project and copy related files from PlayPushDownOO to the new play project.
 
 and so do the following:
 
