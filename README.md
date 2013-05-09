@@ -20,6 +20,11 @@ or
 
 **pegasus.cs.utah.edu:9090**
 
+** The old analyzer is accessible via *pegasus.cs.utah.edu:8080/anadroid*, but it will be unavailable after May 9th, 2013 because the analyzer in that port will be upgraded to the new analytic engine to be tested by APAC test team. ** 
+
+** The tentative link for old analyzer after May 9th, will be pegasus.cs.utah.edu:8088/anadroid. If it is not up, please send an email to liangsy@cs.utah.edu (in case I forgot) **
+
+
 Google Chrome is recommended, with javascript enabled.
 Details are on the web page.
 
