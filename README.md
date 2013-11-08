@@ -1,3 +1,6 @@
+# Outdates version! Please refer to the pushdownoo project.
+-----------
+
 # Anadroid v2 compile & install 	
 
 
